@@ -1,0 +1,3 @@
+# DO NOT INCLUDE TRAILING  slashes ('/')
+DATA_DIR=~/PATH/TO/DATA
+WORK_DIR=~/PATH/TO/CODE/oipm-annual-report-2021/analysis

@@ -1,0 +1,188 @@
+{
+  "visdat": {
+    "d85d24b1ebe9f": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d24b1ebe9f",
+  "attrs": {
+    "d85d24b1ebe9f": {
+      "x": {},
+      "y": {},
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(22, 96, 167)",
+        "width": 2,
+        "dash": "solid"
+      },
+      "name": "Force Incident (FTN)",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "scatter"
+    },
+    "d85d24b1ebe9f.1": {
+      "x": {},
+      "y": {},
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(205, 12, 24)",
+        "width": 2,
+        "dash": "solid"
+      },
+      "name": "Force Amount (UOF)",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "scatter",
+      "inherit": true
+    },
+    "d85d24b1ebe9f.2": {
+      "x": {},
+      "y": {},
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(25, 12, 24)",
+        "width": 2,
+        "dash": "dashdot"
+      },
+      "name": "Force per incident (UOF/FTN)",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "scatter",
+      "yaxis": "y2",
+      "inherit": true
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 150,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "hovermode": "compare",
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "title": "Month in 2021",
+      "showgrid": false,
+      "type": "category"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Num incidents",
+      "showgrid": true
+    },
+    "yaxis2": {
+      "side": "right",
+      "overlaying": "y",
+      "title": "Force per incident",
+      "range": [0, 10]
+    },
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "y": [22, 34, 34, 42, 22, 34, 34, 42, 22, 34, 34, 42],
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(22, 96, 167)",
+        "width": 2,
+        "dash": "solid"
+      },
+      "name": "Force Incident (FTN)",
+      "type": "scatter",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(31,119,180,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "error_x": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "y": [41, 79, 80, 103, 144, 84, 118, 105, 93, 61, 111, 67],
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(205, 12, 24)",
+        "width": 2,
+        "dash": "solid"
+      },
+      "name": "Force Amount (UOF)",
+      "type": "scatter",
+      "marker": {
+        "color": "rgba(255,127,14,1)",
+        "line": {
+          "color": "rgba(255,127,14,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "error_x": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "y": [1.86363636363636, 2.32352941176471, 2.35294117647059, 2.45238095238095, 6.54545454545455, 2.47058823529412, 3.47058823529412, 2.5, 4.22727272727273, 1.79411764705882, 3.26470588235294, 1.5952380952381],
+      "mode": "lines+markers",
+      "line": {
+        "color": "rgb(25, 12, 24)",
+        "width": 2,
+        "dash": "dashdot"
+      },
+      "name": "Force per incident (UOF/FTN)",
+      "type": "scatter",
+      "yaxis": "y2",
+      "marker": {
+        "color": "rgba(44,160,44,1)",
+        "line": {
+          "color": "rgba(44,160,44,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(44,160,44,1)"
+      },
+      "error_x": {
+        "color": "rgba(44,160,44,1)"
+      },
+      "xaxis": "x",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
