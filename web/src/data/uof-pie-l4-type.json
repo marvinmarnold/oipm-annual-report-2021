@@ -1,0 +1,71 @@
+{
+  "visdat": {
+    "d85d21dfe44f0": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d21dfe44f0",
+  "attrs": {
+    "d85d21dfe44f0": {
+      "labels": {},
+      "values": {},
+      "textposition": "inside",
+      "textinfo": "label+value+percent",
+      "insidetextfont": {
+        "color": "#FFFFFF"
+      },
+      "name": "Level L4 Total =  44",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "pie"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "hovermode": "compare",
+    "title": "Level L4 Total =  44",
+    "showlegend": false
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "labels": [" VehPursuits w/Injury", "Canine (Bite)", "Firearm Discharged", "Force (Neck Holds)", "Head strike while Hancuffed", "L4-Taser", "NonTrad Impact Weapon"],
+      "values": [21, 4, 3, 4, 5, 5, 2],
+      "textposition": ["inside", "inside", "inside", "inside", "inside", "inside", "inside"],
+      "textinfo": "label+value+percent",
+      "insidetextfont": {
+        "color": "#FFFFFF"
+      },
+      "name": "Level L4 Total =  44",
+      "type": "pie",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(255,255,255,1)"
+        }
+      },
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

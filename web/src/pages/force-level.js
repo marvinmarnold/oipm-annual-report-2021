@@ -1,13 +1,13 @@
 import React from "react"
-import { Container, Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
+import { Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
 
 // Components
 import Page from "../components/layout/page"
-import ForceIntroductionSection from '../components/force/force-introduction-section'
+import ForceTypeLevelSection from '../components/force/type-level/force-type-level-section'
 
 const ForcePage = () => (
 	<Page
-		title={"UOF Intro - 2021 OIPM Annual Report"}
+		title={"UOF by Level"}
 		nav={
 			<Nav className="mt-4" vertical>
 				<NavItem>
@@ -48,13 +48,15 @@ const ForcePage = () => (
 					</Col>
 				</Row>
 
-				<ForceIntroductionSection />
+				<ForceTypeLevelSection />
 
 				<Row className="text-center">
 					<Col className="py-5">
-					<a href="/force-time" className="text-white"><Button size="lg" color="success">Next: Force over time ></Button></a>
+					<a href="/force-time" className="text-white"><Button size="lg" color="secondary" className="mx-3">&lt; Previous: Force over time</Button></a>
+					<a href="/force-outcome" className="text-white"><Button size="lg" color="success">Next: Force by outcome ></Button></a>
 					</Col>
 				</Row>
+
 			</div>
 		}
 	/>

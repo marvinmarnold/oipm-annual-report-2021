@@ -1,13 +1,13 @@
 import React from "react"
-import { Container, Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
+import { Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
 
 // Components
 import Page from "../components/layout/page"
-import ForceIntroductionSection from '../components/force/force-introduction-section'
+import MostForcefulSection from '../components/force/most-forceful/most-forceful-section'
 
 const ForcePage = () => (
 	<Page
-		title={"UOF Intro - 2021 OIPM Annual Report"}
+		title={"UOF by Most Force"}
 		nav={
 			<Nav className="mt-4" vertical>
 				<NavItem>
@@ -48,13 +48,15 @@ const ForcePage = () => (
 					</Col>
 				</Row>
 
-				<ForceIntroductionSection />
+				<MostForcefulSection />
 
 				<Row className="text-center">
 					<Col className="py-5">
-					<a href="/force-time" className="text-white"><Button size="lg" color="success">Next: Force over time ></Button></a>
+					<a href="/force-justification" className="text-white"><Button size="lg" color="secondary" className="mx-3">&lt; Previous: Force by justification</Button></a>
+					<a href="/force-officer" className="text-white"><Button size="lg" color="success">Next: Force by officer details ></Button></a>
 					</Col>
 				</Row>
+
 			</div>
 		}
 	/>

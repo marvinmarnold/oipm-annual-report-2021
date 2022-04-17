@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
 					</DropdownToggle>
 					<DropdownMenu>
 						<a href="#report-intro"><DropdownItem>Overview</DropdownItem></a>
-						<a href={this.withPrefix("/force-highlights")}><DropdownItem>Use of Force</DropdownItem></a>
+						<a href={this.withPrefix("/force")}><DropdownItem>Use of Force</DropdownItem></a>
 						{/* <a href={this.withPrefix("/complaints-highlights")}><DropdownItem>Complaints &amp; Misconduct</DropdownItem></a>
 						<a href={this.withPrefix("/mediation")}><DropdownItem>Mediation</DropdownItem></a>
 						<a href={this.withPrefix("/officers")}><DropdownItem>Officer Demographics</DropdownItem></a> */}
@@ -175,9 +175,9 @@ class IndexPage extends React.Component {
 					<DropdownMenu>
 						<a href="#report-intro"><DropdownItem>Overview</DropdownItem></a>
 						<a href={this.withPrefix("/force")}><DropdownItem>Use of Force</DropdownItem></a>
-						<a href={this.withPrefix("/complaints")}><DropdownItem>Complaints &amp; Misconduct</DropdownItem></a>
+						{/* <a href={this.withPrefix("/complaints")}><DropdownItem>Complaints &amp; Misconduct</DropdownItem></a>
 						<a href={this.withPrefix("/mediation")}><DropdownItem>Mediation</DropdownItem></a>
-						<a href={this.withPrefix("/officers")}><DropdownItem>Officer Demographics</DropdownItem></a>
+						<a href={this.withPrefix("/officers")}><DropdownItem>Officer Demographics</DropdownItem></a> */}
 					</DropdownMenu>
 				</ButtonDropdown>
 

@@ -1,0 +1,163 @@
+{
+  "visdat": {
+    "d85d26bb8fe13": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d26bb8fe13",
+  "attrs": {
+    "d85d26bb8fe13": {
+      "x": {},
+      "y": {},
+      "name": {},
+      "color": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "showgrid": false,
+      "title": false,
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": ["F", "M", "Unknown sex"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Amount of force (UOF)"
+    },
+    "barmode": "stack",
+    "legend": {
+      "x": 0,
+      "y": -0.5
+    },
+    "hovermode": "compare",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["F", "M"],
+      "y": [74, 410],
+      "name": "Black / African American",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["F", "M"],
+      "y": [4, 68],
+      "name": "Hispanic",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(252,141,98,1)",
+        "line": {
+          "color": "rgba(252,141,98,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_y": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_x": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["M", "Unknown sex"],
+      "y": [53, 1],
+      "name": "Unknown race",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(141,160,203,1)",
+        "line": {
+          "color": "rgba(141,160,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["F", "M"],
+      "y": [58, 418],
+      "name": "White",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(231,138,195,1)",
+        "line": {
+          "color": "rgba(231,138,195,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_y": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_x": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

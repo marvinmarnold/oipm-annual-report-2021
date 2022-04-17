@@ -1,0 +1,83 @@
+{
+  "visdat": {
+    "d85d2629ccdc6": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d2629ccdc6",
+  "attrs": {
+    "d85d2629ccdc6": {
+      "x": {},
+      "y": {},
+      "text": {},
+      "textposition": "outside",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Disposition",
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": ["Authorized", "Invalid data", "No force used", "UOF Force Used Against Officer", "UOF Not Justified"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "count"
+    },
+    "hovermode": "closest",
+    "showlegend": false
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["Authorized", "Invalid data", "No force used", "UOF Force Used Against Officer", "UOF Not Justified"],
+      "y": [357, 33, 12, 3, 13],
+      "text": [357, 33, 12, 3, 13],
+      "textposition": ["outside", "outside", "outside", "outside", "outside"],
+      "type": "bar",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(31,119,180,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "error_x": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

@@ -52,7 +52,7 @@ export default class TopNav extends React.Component {
 								<NavLink href={this.withPrefix("/force")}>Use of Force</NavLink>
 							</NavItem>
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href={this.withPrefix("/complaints-highlights")}>Complaints &amp; Misconduct</NavLink>
               </NavItem>
 
@@ -61,7 +61,7 @@ export default class TopNav extends React.Component {
               </NavItem>
 							<NavItem>
                 <NavLink href={this.withPrefix("/officers")}>Officer Demographics</NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink href="https://nolaipm.gov">OIPM Home</NavLink>
               </NavItem>

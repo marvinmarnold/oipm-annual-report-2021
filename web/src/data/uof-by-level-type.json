@@ -1,0 +1,663 @@
+{
+  "visdat": {
+    "d85d29bce3e4": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d29bce3e4",
+  "attrs": {
+    "d85d29bce3e4": {
+      "x": {},
+      "y": {},
+      "name": {},
+      "color": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["Not reported", "L1", "L2", "L3", "L4"],
+      "title": "Level of force",
+      "showgrid": false,
+      "type": "category"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Amount of force (UOF)"
+    },
+    "barmode": "stack",
+    "hovermode": "compare",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["L4"],
+      "y": [21],
+      "name": " VehPursuits w/Injury",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [29],
+      "name": "- Hands (with injury)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(163,182,145,1)",
+        "line": {
+          "color": "rgba(163,182,145,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(163,182,145,1)"
+      },
+      "error_y": {
+        "color": "rgba(163,182,145,1)"
+      },
+      "error_x": {
+        "color": "rgba(163,182,145,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [2],
+      "name": "Baton (non-strike)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(204,167,126,1)",
+        "line": {
+          "color": "rgba(204,167,126,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(204,167,126,1)"
+      },
+      "error_y": {
+        "color": "rgba(204,167,126,1)"
+      },
+      "error_x": {
+        "color": "rgba(204,167,126,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [3],
+      "name": "Baton Miss",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(239,150,106,1)",
+        "line": {
+          "color": "rgba(239,150,106,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(239,150,106,1)"
+      },
+      "error_y": {
+        "color": "rgba(239,150,106,1)"
+      },
+      "error_x": {
+        "color": "rgba(239,150,106,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L3"],
+      "y": [1],
+      "name": "Baton/PR-24 (Strike)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(238,145,116,1)",
+        "line": {
+          "color": "rgba(238,145,116,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "error_y": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "error_x": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [4],
+      "name": "Canine (Bite)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(211,151,147,1)",
+        "line": {
+          "color": "rgba(211,151,147,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(211,151,147,1)"
+      },
+      "error_y": {
+        "color": "rgba(211,151,147,1)"
+      },
+      "error_x": {
+        "color": "rgba(211,151,147,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [21],
+      "name": "Canine (No Bite)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(178,156,177,1)",
+        "line": {
+          "color": "rgba(178,156,177,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(178,156,177,1)"
+      },
+      "error_y": {
+        "color": "rgba(178,156,177,1)"
+      },
+      "error_x": {
+        "color": "rgba(178,156,177,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [29],
+      "name": "Defense Tech / Take-down",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(146,159,203,1)",
+        "line": {
+          "color": "rgba(146,159,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(146,159,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(146,159,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(146,159,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [3],
+      "name": "Firearm Discharged",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(175,154,200,1)",
+        "line": {
+          "color": "rgba(175,154,200,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "error_y": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "error_x": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [337],
+      "name": "Firearm Exhibited",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(201,148,198,1)",
+        "line": {
+          "color": "rgba(201,148,198,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(201,148,198,1)"
+      },
+      "error_y": {
+        "color": "rgba(201,148,198,1)"
+      },
+      "error_x": {
+        "color": "rgba(201,148,198,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [4],
+      "name": "Force (Neck Holds)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(224,140,196,1)",
+        "line": {
+          "color": "rgba(224,140,196,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(224,140,196,1)"
+      },
+      "error_y": {
+        "color": "rgba(224,140,196,1)"
+      },
+      "error_x": {
+        "color": "rgba(224,140,196,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [297],
+      "name": "Hands / Escort tech",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(222,157,174,1)",
+        "line": {
+          "color": "rgba(222,157,174,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(222,157,174,1)"
+      },
+      "error_y": {
+        "color": "rgba(222,157,174,1)"
+      },
+      "error_x": {
+        "color": "rgba(222,157,174,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L3"],
+      "y": [6],
+      "name": "Head Strike (No Wep)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(205,180,144,1)",
+        "line": {
+          "color": "rgba(205,180,144,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "error_y": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "error_x": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [5],
+      "name": "Head strike while Hancuffed",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(185,202,111,1)",
+        "line": {
+          "color": "rgba(185,202,111,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(185,202,111,1)"
+      },
+      "error_y": {
+        "color": "rgba(185,202,111,1)"
+      },
+      "error_x": {
+        "color": "rgba(185,202,111,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [5],
+      "name": "L1-Other",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(174,216,81,1)",
+        "line": {
+          "color": "rgba(174,216,81,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(174,216,81,1)"
+      },
+      "error_y": {
+        "color": "rgba(174,216,81,1)"
+      },
+      "error_x": {
+        "color": "rgba(174,216,81,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [1],
+      "name": "L2-Other",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(202,217,72,1)",
+        "line": {
+          "color": "rgba(202,217,72,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(202,217,72,1)"
+      },
+      "error_y": {
+        "color": "rgba(202,217,72,1)"
+      },
+      "error_x": {
+        "color": "rgba(202,217,72,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [34],
+      "name": "L2-Taser",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(227,217,62,1)",
+        "line": {
+          "color": "rgba(227,217,62,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "error_y": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "error_x": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [5],
+      "name": "L4-Taser",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(252,217,49,1)",
+        "line": {
+          "color": "rgba(252,217,49,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(252,217,49,1)"
+      },
+      "error_y": {
+        "color": "rgba(252,217,49,1)"
+      },
+      "error_x": {
+        "color": "rgba(252,217,49,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [53],
+      "name": "No Force by Officer",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(250,212,80,1)",
+        "line": {
+          "color": "rgba(250,212,80,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(250,212,80,1)"
+      },
+      "error_y": {
+        "color": "rgba(250,212,80,1)"
+      },
+      "error_x": {
+        "color": "rgba(250,212,80,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L4"],
+      "y": [2],
+      "name": "NonTrad Impact Weapon",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(243,205,109,1)",
+        "line": {
+          "color": "rgba(243,205,109,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(243,205,109,1)"
+      },
+      "error_y": {
+        "color": "rgba(243,205,109,1)"
+      },
+      "error_x": {
+        "color": "rgba(243,205,109,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Not reported"],
+      "y": [32],
+      "name": "Not reported",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(234,199,134,1)",
+        "line": {
+          "color": "rgba(234,199,134,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "error_y": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "error_x": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L3"],
+      "y": [3],
+      "name": "Other",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(223,194,152,1)",
+        "line": {
+          "color": "rgba(223,194,152,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(223,194,152,1)"
+      },
+      "error_y": {
+        "color": "rgba(223,194,152,1)"
+      },
+      "error_x": {
+        "color": "rgba(223,194,152,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [140],
+      "name": "Takedown (no injury)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(209,189,161,1)",
+        "line": {
+          "color": "rgba(209,189,161,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(209,189,161,1)"
+      },
+      "error_y": {
+        "color": "rgba(209,189,161,1)"
+      },
+      "error_x": {
+        "color": "rgba(209,189,161,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L2"],
+      "y": [46],
+      "name": "Takedown (w/injury)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(195,184,170,1)",
+        "line": {
+          "color": "rgba(195,184,170,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(195,184,170,1)"
+      },
+      "error_y": {
+        "color": "rgba(195,184,170,1)"
+      },
+      "error_x": {
+        "color": "rgba(195,184,170,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["L1"],
+      "y": [3],
+      "name": "Taser Exhibited",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(179,179,179,1)",
+        "line": {
+          "color": "rgba(179,179,179,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "error_y": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "error_x": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
