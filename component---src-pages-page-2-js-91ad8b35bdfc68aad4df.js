@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkoipm_annual_report_2021=self.webpackChunkoipm_annual_report_2021||[]).push([[617],{6034:function(e,t,n){n.r(t);var a=n(7294),l=n(1597),o=n(7055),r=n(3988);t.default=function(){return a.createElement(o.Z,null,a.createElement(r.Z,{title:"Page two"}),a.createElement("h1",null,"Hi from the second page"),a.createElement("p",null,"Welcome to page 2"),a.createElement(l.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-91ad8b35bdfc68aad4df.js.map
