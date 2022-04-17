@@ -1,0 +1,118 @@
+{
+  "visdat": {
+    "d85d23de27e34": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "d85d23de27e34",
+  "attrs": {
+    "d85d23de27e34": {
+      "x": {},
+      "y": {},
+      "name": "Force incidents",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    },
+    "d85d23de27e34.1": {
+      "x": {},
+      "y": {},
+      "name": "Amount of force (UOF)",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar",
+      "inherit": true
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["5", "10", "20", "100", "200", "300", "400", "500"],
+      "title": "Total number of officers",
+      "type": "category"
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Percent of force",
+      "dtick": 10
+    },
+    "legend": {
+      "x": 0,
+      "y": -0.3
+    },
+    "barmode": "group",
+    "hovermode": "closest",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["5", "10", "20", "100", "200", "300", "400", "500"],
+      "y": [6.02836879432624, 10.5200945626478, 17.25768321513, 51.063829787234, 75.7683215130024, 87.7068557919622, 99.5271867612293, 100],
+      "name": "Force incidents",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(31,119,180,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "error_x": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["5", "10", "20", "100", "200", "300", "400", "500"],
+      "y": [5.61694290976059, 10.5893186003683, 18.4162062615101, 54.6040515653775, 77.9926335174954, 90.4235727440147, 99.6316758747698, 100],
+      "name": "Amount of force (UOF)",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(255,127,14,1)",
+        "line": {
+          "color": "rgba(255,127,14,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "error_x": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

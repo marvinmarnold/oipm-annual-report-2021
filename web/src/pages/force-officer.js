@@ -3,11 +3,11 @@ import { Container, Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
 
 // Components
 import Page from "../components/layout/page"
-import ForceIntroductionSection from '../components/force/force-introduction-section'
+import OfficerDemographicsSection from '../components/force/officer-demographics/officer-demographics-section'
 
 const ForcePage = () => (
 	<Page
-		title={"UOF Intro - 2021 OIPM Annual Report"}
+		title={"UOF by Officer Details"}
 		nav={
 			<Nav className="mt-4" vertical>
 				<NavItem>
@@ -48,13 +48,15 @@ const ForcePage = () => (
 					</Col>
 				</Row>
 
-				<ForceIntroductionSection />
+				<OfficerDemographicsSection />
 
 				<Row className="text-center">
 					<Col className="py-5">
-					<a href="/force-time" className="text-white"><Button size="lg" color="success">Next: Force over time ></Button></a>
+						<a href="/force-most" className="text-white"><Button size="lg" color="secondary" className="mx-3">&lt; Previous: Officers using most force</Button></a>
+						<a href="/force-individual" className="text-white"><Button size="lg" color="success">Next: Force by individual details ></Button></a>
 					</Col>
 				</Row>
+
 			</div>
 		}
 	/>

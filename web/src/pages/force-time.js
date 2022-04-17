@@ -43,7 +43,7 @@ const ForcePage = () => (
 			<div>
 				<Row>
 					<Col>
-						<h1 className="mt-5 text-center">2018 Annual Report</h1>
+						<h1 className="mt-5 text-center">2021 Annual Report</h1>
 						<h2 className="mb-5 text-center">Statistical Review of NOPD's Use of Force</h2>
 					</Col>
 				</Row>
@@ -52,8 +52,8 @@ const ForcePage = () => (
 
 				<Row className="text-center">
 					<Col className="py-5">
-						<Button size="lg" color="secondary" className="mx-3"><a href="/force" className="text-white">&lt; Previous: Force introduction</a></Button>
-						<Button size="lg" color="success"><a href="/force-level" className="text-white">Next: Force by type and level ></a></Button>
+					<a href="/force" className="text-white"><Button size="lg" color="secondary" className="mx-3">&lt; Previous: Force introduction</Button></a>
+					<a href="/force-level" className="text-white"><Button size="lg" color="success">Next: Force by type and level ></Button></a>
 					</Col>
 				</Row>
 
