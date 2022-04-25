@@ -3,13 +3,13 @@ title <- "Force by victim sex and race"
 
 ########################################################################################################
 ########################################################################################################
-uof.by.sex <- uof.for.year %>% group_by(Citizen.sex, Citizen.race)
+uof.by.sex <- uof.for.year %>% group_by(Individual.sex, Individual.race)
 count.by.sex.race <- summarize(uof.by.sex, num.uof = n())
 
 p.uof.by.victim.sex.race <- plot_ly(count.by.sex.race, 
-                                    x = ~Citizen.sex, y = ~num.uof, 
-                                    type = 'bar',  name = ~Citizen.race, 
-                                    color = ~Citizen.race) %>%
+                                    x = ~Individual.sex, y = ~num.uof, 
+                                    type = 'bar',  name = ~Individual.race, 
+                                    color = ~Individual.race) %>%
   
   layout(xaxis = list(showgrid = F, title = F), 
          yaxis = list(title = 'Amount of force (UOF)'), 

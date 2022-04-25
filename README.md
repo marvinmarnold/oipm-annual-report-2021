@@ -21,6 +21,16 @@ https://annual-report-2021.nolaipm.gov
 
 ## R analysis
 
+Dependencies
+
+1. Install dependencies
+```
+install.packages("dplyr")
+install.packages("plotly")
+install.packages("plyr")
+```
+
+2. Execute analysis
 ```
 cd analysis
 cp .Renviron.example .Renviron
@@ -46,3 +56,10 @@ Rscript annual-report-2021.R
 
 
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingNewSubdomain.html
+
+
+### Notes
+
+Missing because of ADP:
+- https://annual-report-2018.nolaipm.gov/force-most/
+- https://annual-report-2018.nolaipm.gov/force-officer/

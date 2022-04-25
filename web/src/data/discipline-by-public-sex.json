@@ -1,0 +1,160 @@
+{
+  "visdat": {
+    "1ecf1940ee600a": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "1ecf1940ee600a",
+  "attrs": {
+    "1ecf1940ee600a": {
+      "x": {},
+      "y": {},
+      "name": {},
+      "color": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 100,
+      "l": 60,
+      "t": 25,
+      "r": 100
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": false,
+      "showgrid": false,
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Number allegations"
+    },
+    "barmode": "stack",
+    "hovermode": "compare",
+    "title": false,
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Mediation", "Suspension", "Unknown action taken"],
+      "y": [16, 2, 15, 14, 9],
+      "name": "F",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["DI-2", "Dismissed", "Illegitimate outcome", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [1, 2, 25, 7, 2, 2, 14],
+      "name": "M",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(252,141,98,1)",
+        "line": {
+          "color": "rgba(252,141,98,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_y": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_x": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Resigned before disposition"],
+      "y": [1, 7],
+      "name": "Unknown gender",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(141,160,203,1)",
+        "line": {
+          "color": "rgba(141,160,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [1, 142, 62, 3, 18, 37, 23],
+      "name": "Unknown sex",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(231,138,195,1)",
+        "line": {
+          "color": "rgba(231,138,195,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_y": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_x": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

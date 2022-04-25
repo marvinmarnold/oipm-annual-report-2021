@@ -1,0 +1,70 @@
+{
+  "visdat": {
+    "e1597c3d164b": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "e1597c3d164b",
+  "attrs": {
+    "e1597c3d164b": {
+      "labels": {},
+      "values": {},
+      "textposition": "inside",
+      "textinfo": "label+value+percent",
+      "insidetextfont": {
+        "color": "#FFFFFF"
+      },
+      "name": "Top allegations",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "pie"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 40,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "hovermode": "compare",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "labels": ["Abuse of Position", "ACTING IMPARTIALLY", "ACTING IN CIVIL MATTERS", "ADHERENCE TO LAW", "Alcohol/Drugs Influence Test", "ASSOCIATIONS", "CEASING TO PERFORM BEFORE END OF SHIFT", "CITIZENS REPORT COMPLAINT", "COURTESY", "CRIMINAL PROCEEDING AGAINST MEMBER(S)", "DEVOTING ENTIRE TIME TO DUTY", "DISCRIMINATION", "FAILURE TO COOPERATE/WITHHOLDING INFORMATION", "FAILURE TO REPORT MISCONDUCT", "FALSE OR INACCURATE REPORTS", "FICTITIOUS ILLNESS OR INJURY", "HONESTY AND TRUTHFULNESS", "INSTRUCTIONS FROM AUTHORITATIVE SOURCE", "INSTRUCTIONS FROM AUTHORITATIVE SOURCE  ", "INTERFERING WITH INVESTIGATIONS", "LEAVING ASSIGNED AREA", "LEAVING CITY ON DUTY", "NEGLECT OF DUTY", "Professionalism", "PUBLIC STATEMENT AND APPEARANCES", "REPORTING FOR DUTY", "Retaliation", "SECURITY OF RECORDS", "Social Networking Websites....etc.", "UNAUTHORIZED FORCE", "Unknown Allegation", "Use Of Alcohol/Drugs Off-Duty", "Use Of Alcohol/Drugs On Duty", "Use of Drugs/Substance Abuse Testing", "VERBAL INTIMIDATION"],
+      "values": [1, 11, 5, 115, 1, 6, 2, 1, 19, 1, 5, 3, 1, 2, 6, 2, 10, 54, 80, 1, 5, 2, 647, 271, 1, 14, 1, 4, 11, 65, 34, 3, 3, 1, 8],
+      "textposition": ["inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside", "inside"],
+      "textinfo": "label+value+percent",
+      "insidetextfont": {
+        "color": "#FFFFFF"
+      },
+      "name": "Top allegations",
+      "type": "pie",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(255,255,255,1)"
+        }
+      },
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

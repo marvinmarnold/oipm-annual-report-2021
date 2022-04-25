@@ -33,7 +33,7 @@ p.uof.by.year <- plot_ly(count.uof.by.year, x = ~year,
                          text = ~num,
                          textposition = "top center",
                          line = list(color = 'rgb(22, 96, 167)', width = 3, dash = 'solid')) %>%
-  
+
   # UOF according to data.nola.gov
   add_trace(x=nopd.uof.years, y = nopd.uof, name = 'Paper reports', 
             line = list(color = 'rgb(205, 12, 24)', width = 2, dash = 'dot'), 

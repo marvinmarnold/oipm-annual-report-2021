@@ -1,0 +1,114 @@
+{
+  "visdat": {
+    "e1592b97def4": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "e1592b97def4",
+  "attrs": {
+    "e1592b97def4": {
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "x": {},
+      "y": {},
+      "type": "bar",
+      "name": {},
+      "color": {},
+      "inherit": true
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 150,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "barmode": "stack",
+    "hovermode": "compare",
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Year",
+      "dtick": 1,
+      "showgrid": false,
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": ["2016", "2017", "2018", "2019", "2020", "2021"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Number of complaints",
+      "showgrid": true
+    },
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [586, 451, 426, 456, 335, 374],
+      "type": "bar",
+      "name": "Public Initiated",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [264, 283, 254, 233, 198, 300],
+      "type": "bar",
+      "name": "Rank Initiated",
+      "marker": {
+        "color": "rgba(141,160,203,1)",
+        "line": {
+          "color": "rgba(141,160,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
