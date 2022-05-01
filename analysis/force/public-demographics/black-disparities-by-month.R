@@ -7,7 +7,7 @@ title <- paste("Force, Bookings, & Stops of black people by month in", CURRENT.Y
 # By month
 
 # Group by month and race
-uof.by.month <- uof.for.year %>% group_by(Month.occurred, Citizen.race)
+uof.by.month <- uof.for.year %>% group_by(Month.occurred, Individual.race)
 bookings.by.month <- bookings.for.year %>% group_by(In.Month, Race)
 stops.by.month <- stops.for.year %>% group_by(month, SubjectRace)
 
@@ -38,7 +38,7 @@ count.stops.by.month <- count.stops.by.month %>% mutate(
 )
 
 # Get data for black people
-black.uof.by.month <- count.uof.by.month %>% filter(Citizen.race == black)
+black.uof.by.month <- count.uof.by.month %>% filter(Individual.race == black)
 black.bookings.by.month <- count.bookings.by.month %>% filter(Race == black)
 black.stops.by.month <- count.stops.by.month %>% filter(SubjectRace == black)
 

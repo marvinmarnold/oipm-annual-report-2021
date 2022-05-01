@@ -3,14 +3,14 @@ title <- "Force by victim sex and race"
 
 ########################################################################################################
 ########################################################################################################
-uof.by.sex <- uof.for.year %>% group_by(Citizen.sex, Citizen.race)
+uof.by.sex <- uof.for.year %>% group_by(Individual.sex, Individual.race)
 count.by.sex.race <- summarize(uof.by.sex, num.uof = n())
-count.by.female.race <- count.by.sex.race %>% filter(Citizen.sex == 'F')
+count.by.female.race <- count.by.sex.race %>% filter(Individual.sex == 'F')
 
 # Construct pie chart
 title <- "UOF by female victim race"
 p.uof.by.female.victim.race <- plot_ly(count.by.female.race,  type = 'pie',
-                                       labels = ~Citizen.race, 
+                                       labels = ~Individual.race, 
                                        values = ~num.uof,
                                        textposition = 'inside',
                                        textinfo = 'label+value+percent',

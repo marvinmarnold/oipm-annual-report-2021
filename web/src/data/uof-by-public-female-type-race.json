@@ -1,0 +1,159 @@
+{
+  "visdat": {
+    "e15956535a1d": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "e15956535a1d",
+  "attrs": {
+    "e15956535a1d": {
+      "x": {},
+      "y": {},
+      "name": {},
+      "color": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 150,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "showgrid": false,
+      "title": "Force.type",
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton Miss", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Number UOF"
+    },
+    "barmode": "stack",
+    "hovermode": "compare",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": [" VehPursuits w/Injury", "- Hands (with injury)", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"],
+      "y": [6, 3, 2, 14, 1, 38, 1, 1, 4, 3, 13, 4],
+      "name": "Black / African American",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Firearm Exhibited", "Hands / Escort tech", "No Force by Officer"],
+      "y": [2, 12, 2],
+      "name": "Hispanic",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(252,141,98,1)",
+        "line": {
+          "color": "rgba(252,141,98,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_y": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "error_x": {
+        "color": "rgba(252,141,98,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Defense Tech / Take-down", "Firearm Exhibited"],
+      "y": [1, 1],
+      "name": "Unknown race",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(141,160,203,1)",
+        "line": {
+          "color": "rgba(141,160,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["- Hands (with injury)", "Baton Miss", "Firearm Exhibited", "Hands / Escort tech", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"],
+      "y": [5, 1, 2, 11, 3, 1, 2, 4],
+      "name": "White",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(231,138,195,1)",
+        "line": {
+          "color": "rgba(231,138,195,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_y": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_x": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

@@ -8,7 +8,7 @@ title <- paste("Force, Bookings, & Stops of Black people by month in", CURRENT.Y
 # By district
 
 # Group by month and race
-uof.by.district <- uof.for.year %>% filter(District.or.division %in% districts) %>% group_by(District.or.division, Citizen.race)
+uof.by.district <- uof.for.year %>% filter(District.or.division %in% districts) %>% group_by(District.or.division, Individual.race)
 
 #bookings.by.district <- charges.for.year %>% 
 #  select(Folder.number, Race, Arrest.district) %>% 
@@ -45,7 +45,7 @@ count.stops.by.district <- count.stops.by.district %>% mutate(
 )
 
 # Get data for black people
-black.uof.by.district <- count.uof.by.district %>% filter(Citizen.race == black) %>% mutate(
+black.uof.by.district <- count.uof.by.district %>% filter(Individual.race == black) %>% mutate(
   district = substring(District.or.division, 1, 3)
 )
 #black.bookings.by.district <- count.bookings.by.district %>% filter(Race == black)

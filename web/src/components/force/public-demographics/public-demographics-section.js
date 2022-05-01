@@ -1,14 +1,13 @@
 import React from "react"
 import { Row, Col } from 'reactstrap'
-import { Link } from "gatsby"
 
 import UofByPublicSexRacePlot from './uof-by-public-sex-race-plot'
 import UofByPublicFemaleRacePlot from './uof-by-public-female-race-plot'
 import UofByPublicMaleRacePlot from './uof-by-public-male-race-plot'
 import UofByPublicFemaleTypeRacePlot from './uof-by-public-female-type-race-plot'
 import UofByPublicMaleTypeRacePlot from './uof-by-public-male-type-race-plot'
-import BlackDisparitiesByMonthPlot from './black-disparities-by-month-plot'
-import BlackDisparitiesByDistrictPlot from './black-disparities-by-district-plot'
+// import BlackDisparitiesByMonthPlot from './black-disparities-by-month-plot'
+// import BlackDisparitiesByDistrictPlot from './black-disparities-by-district-plot'
 
 class PublicDemographicsSection extends React.Component {
 	constructor() {
@@ -28,9 +27,11 @@ class PublicDemographicsSection extends React.Component {
 
 				<Row>
 					<Col>
+                        <h6 className="text-center">Females</h6>
 						<UofByPublicFemaleRacePlot />
 					</Col>
 					<Col>
+                    <h6 className="text-center">Males</h6>
 						<UofByPublicMaleRacePlot />
 					</Col>
 				</Row>
@@ -104,7 +105,7 @@ from 100%.</p>
 				<Row>
 					<Col>
 						<h6>RACE OF INDIVIDUAL BY MONTH</h6>
-						<BlackDisparitiesByMonthPlot />
+						{/* <BlackDisparitiesByMonthPlot /> */}
 						<h5 className="text-center">FIGURE 27: UOF AGAINST BLACK PEOPLE</h5>
 
 					</Col>
@@ -113,7 +114,7 @@ from 100%.</p>
 					<Col>
 						<h6>Race disparities by district</h6>
 						<p>Note: Currently missing OPSO data required to show arrests.</p>
-						<BlackDisparitiesByDistrictPlot />
+						{/* <BlackDisparitiesByDistrictPlot /> */}
 						<ul>
 							<li>Stops & searches, as well as UOF, disproportionately negatively impact Black
 people. Other departments analyzed, such as the Metropolitan Police Department

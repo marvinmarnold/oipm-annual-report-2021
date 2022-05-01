@@ -3,7 +3,7 @@ import { Container, Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
 
 // Components
 import Page from "../components/layout/page"
-// import PublicDemographicsSection from '../components/force/public-demographics/public-demographics-section'
+import PublicDemographicsSection from '../components/force/public-demographics/public-demographics-section'
 
 const ForcePage = () => (
 	<Page
@@ -48,7 +48,7 @@ const ForcePage = () => (
 					</Col>
 				</Row>
 
-				{/* <PublicDemographicsSection /> */}
+				<PublicDemographicsSection />
 
 				<Row className="text-center">
 					<Col className="py-5">

@@ -1,0 +1,519 @@
+{
+  "visdat": {
+    "1ecf1971197495": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "1ecf1971197495",
+  "attrs": {
+    "1ecf1971197495": {
+      "x": {},
+      "y": {},
+      "name": {},
+      "color": {},
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 100,
+      "l": 60,
+      "t": 25,
+      "r": 100
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": false,
+      "showgrid": false,
+      "type": "category",
+      "categoryorder": "array",
+      "categoryarray": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"]
+    },
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Number allegations"
+    },
+    "barmode": "stack",
+    "hovermode": "compare",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Resigned before disposition", "Suspension"],
+      "y": [2, 2, 5, 4, 4],
+      "name": "PARAGRAPH 01 - ADHERENCE TO LAW",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(102,194,165,1)",
+        "line": {
+          "color": "rgba(102,194,165,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_y": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "error_x": {
+        "color": "rgba(102,194,165,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [12, 2, 14, 1, 1, 3],
+      "name": "PARAGRAPH 01 - Professionalism",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(178,177,139,1)",
+        "line": {
+          "color": "rgba(178,177,139,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(178,177,139,1)"
+      },
+      "error_y": {
+        "color": "rgba(178,177,139,1)"
+      },
+      "error_x": {
+        "color": "rgba(178,177,139,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Resigned before disposition"],
+      "y": [4, 1, 1],
+      "name": "PARAGRAPH 01 - REPORTING FOR DUTY",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(228,156,113,1)",
+        "line": {
+          "color": "rgba(228,156,113,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(228,156,113,1)"
+      },
+      "error_y": {
+        "color": "rgba(228,156,113,1)"
+      },
+      "error_x": {
+        "color": "rgba(228,156,113,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Unknown action taken"],
+      "y": [1],
+      "name": "PARAGRAPH 01 - SECURITY OF RECORDS",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(238,145,116,1)",
+        "line": {
+          "color": "rgba(238,145,116,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "error_y": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "error_x": {
+        "color": "rgba(238,145,116,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Resigned before disposition"],
+      "y": [1],
+      "name": "PARAGRAPH 01 - USE OF DEPARTMENT EQUIPMENT",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(201,152,157,1)",
+        "line": {
+          "color": "rgba(201,152,157,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(201,152,157,1)"
+      },
+      "error_y": {
+        "color": "rgba(201,152,157,1)"
+      },
+      "error_x": {
+        "color": "rgba(201,152,157,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Suspension"],
+      "y": [1, 1],
+      "name": "PARAGRAPH 02 - Abuse of Position",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(150,159,197,1)",
+        "line": {
+          "color": "rgba(150,159,197,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(150,159,197,1)"
+      },
+      "error_y": {
+        "color": "rgba(150,159,197,1)"
+      },
+      "error_x": {
+        "color": "rgba(150,159,197,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Unknown action taken"],
+      "y": [6, 1, 1, 1, 2],
+      "name": "PARAGRAPH 02 - COURTESY",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(175,154,200,1)",
+        "line": {
+          "color": "rgba(175,154,200,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "error_y": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "error_x": {
+        "color": "rgba(175,154,200,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Unknown action taken"],
+      "y": [1],
+      "name": "PARAGRAPH 02 - FALSE OR INACCURATE REPORTS",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(209,146,197,1)",
+        "line": {
+          "color": "rgba(209,146,197,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(209,146,197,1)"
+      },
+      "error_y": {
+        "color": "rgba(209,146,197,1)"
+      },
+      "error_x": {
+        "color": "rgba(209,146,197,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [6, 4, 2, 1, 10],
+      "name": "PARAGRAPH 02 - INSTRUCTIONS FROM AUTHORITATIVE SOURCE",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(226,148,184,1)",
+        "line": {
+          "color": "rgba(226,148,184,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(226,148,184,1)"
+      },
+      "error_y": {
+        "color": "rgba(226,148,184,1)"
+      },
+      "error_x": {
+        "color": "rgba(226,148,184,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Letter of Reprimand", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [13, 15, 5, 3, 1],
+      "name": "PARAGRAPH 02 - INSTRUCTIONS FROM AUTHORITATIVE SOURCE  ",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(205,180,144,1)",
+        "line": {
+          "color": "rgba(205,180,144,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "error_y": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "error_x": {
+        "color": "rgba(205,180,144,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome"],
+      "y": [1],
+      "name": "PARAGRAPH 03 - DEVOTING ENTIRE TIME TO DUTY",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(176,208,99,1)",
+        "line": {
+          "color": "rgba(176,208,99,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(176,208,99,1)"
+      },
+      "error_y": {
+        "color": "rgba(176,208,99,1)"
+      },
+      "error_x": {
+        "color": "rgba(176,208,99,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Resigned before disposition"],
+      "y": [1],
+      "name": "PARAGRAPH 03 - HONESTY AND TRUTHFULNESS",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(193,217,75,1)",
+        "line": {
+          "color": "rgba(193,217,75,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(193,217,75,1)"
+      },
+      "error_y": {
+        "color": "rgba(193,217,75,1)"
+      },
+      "error_x": {
+        "color": "rgba(193,217,75,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome"],
+      "y": [1],
+      "name": "PARAGRAPH 03 - PUBLIC STATEMENT AND APPEARANCES",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(227,217,62,1)",
+        "line": {
+          "color": "rgba(227,217,62,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "error_y": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "error_x": {
+        "color": "rgba(227,217,62,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["DI-2", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "y": [1, 123, 36, 9, 11, 42, 22],
+      "name": "PARAGRAPH 04 - NEGLECT OF DUTY",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(254,216,56,1)",
+        "line": {
+          "color": "rgba(254,216,56,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(254,216,56,1)"
+      },
+      "error_y": {
+        "color": "rgba(254,216,56,1)"
+      },
+      "error_x": {
+        "color": "rgba(254,216,56,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome"],
+      "y": [2],
+      "name": "PARAGRAPH 05 - VERBAL INTIMIDATION",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(245,207,100,1)",
+        "line": {
+          "color": "rgba(245,207,100,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(245,207,100,1)"
+      },
+      "error_y": {
+        "color": "rgba(245,207,100,1)"
+      },
+      "error_x": {
+        "color": "rgba(245,207,100,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome"],
+      "y": [1],
+      "name": "PARAGRAPH 06 - ACTING IN CIVIL MATTERS",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(234,199,134,1)",
+        "line": {
+          "color": "rgba(234,199,134,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "error_y": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "error_x": {
+        "color": "rgba(234,199,134,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome", "Unknown action taken"],
+      "y": [8, 6],
+      "name": "PARAGRAPH 06 - UNAUTHORIZED FORCE",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(219,192,155,1)",
+        "line": {
+          "color": "rgba(219,192,155,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(219,192,155,1)"
+      },
+      "error_y": {
+        "color": "rgba(219,192,155,1)"
+      },
+      "error_x": {
+        "color": "rgba(219,192,155,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Dismissed", "Suspension"],
+      "y": [1, 1],
+      "name": "PARAGRAPH 09 - Use Of Alcohol/Drugs Off-Duty",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(200,186,167,1)",
+        "line": {
+          "color": "rgba(200,186,167,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(200,186,167,1)"
+      },
+      "error_y": {
+        "color": "rgba(200,186,167,1)"
+      },
+      "error_x": {
+        "color": "rgba(200,186,167,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["Illegitimate outcome"],
+      "y": [2],
+      "name": "PARAGRAPH 13 - Social Networking Websites....etc.",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(179,179,179,1)",
+        "line": {
+          "color": "rgba(179,179,179,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "error_y": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "error_x": {
+        "color": "rgba(179,179,179,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}
