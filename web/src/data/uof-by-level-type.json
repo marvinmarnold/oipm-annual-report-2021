@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf197efe0e6d": ["function () ", "plotlyVisDat"]
+    "1f91e617ae62a8": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf197efe0e6d",
+  "cur_data": "1f91e617ae62a8",
   "attrs": {
-    "1ecf197efe0e6d": {
+    "1f91e617ae62a8": {
       "x": {},
       "y": {},
       "name": {},
@@ -38,6 +38,48 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": "Not reported",
+        "y": 32,
+        "text": 32,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L1",
+        "y": 837,
+        "text": 837,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L2",
+        "y": 163,
+        "text": 163,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L3",
+        "y": 10,
+        "text": 10,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L4",
+        "y": 44,
+        "text": 44,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

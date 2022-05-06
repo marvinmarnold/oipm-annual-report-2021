@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "d85d21413b315": ["function () ", "plotlyVisDat"]
+    "1f91e66cecab00": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "d85d21413b315",
+  "cur_data": "1f91e66cecab00",
   "attrs": {
-    "d85d21413b315": {
+    "1f91e66cecab00": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -23,17 +23,17 @@
       "t": 25,
       "r": 10
     },
-    "title": "Level L4 Force",
+    "title": "Level L1 Force",
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
       "categoryorder": "array",
-      "categoryarray": ["L1", "L2", "L3", "L4"],
+      "categoryarray": [2016, 2017, 2018, 2019, 2020, 2021],
       "title": false,
       "showgrid": false,
-      "dtick": 1,
-      "tick0": 2016,
-      "type": "category"
+      "ticktext": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickvals": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -46,6 +46,56 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": 2016,
+        "y": 1396,
+        "text": 1396,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2017,
+        "y": 1274,
+        "text": 1274,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2018,
+        "y": 979,
+        "text": 979,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2019,
+        "y": 771,
+        "text": 771,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2020,
+        "y": 709,
+        "text": 709,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2021,
+        "y": 837,
+        "text": 837,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",
@@ -55,10 +105,10 @@
   },
   "data": [
     {
-      "x": ["2021"],
-      "y": [21],
+      "x": ["2018", "2020", "2021"],
+      "y": [2, 1, 2],
       "type": "bar",
-      "name": " VehPursuits w/Injury",
+      "name": "Baton (non-strike)",
       "marker": {
         "color": "rgba(102,194,165,1)",
         "line": {
@@ -79,202 +129,154 @@
       "frame": null
     },
     {
-      "x": ["2016", "2020", "2021"],
-      "y": [9, 3, 4],
-      "type": "bar",
-      "name": "Canine (Bite)",
-      "marker": {
-        "color": "rgba(228,156,113,1)",
-        "line": {
-          "color": "rgba(228,156,113,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(228,156,113,1)"
-      },
-      "error_y": {
-        "color": "rgba(228,156,113,1)"
-      },
-      "error_x": {
-        "color": "rgba(228,156,113,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2016", "2017", "2019", "2020", "2021"],
-      "y": [6, 7, 23, 1, 3],
-      "type": "bar",
-      "name": "Firearm Discharged",
-      "marker": {
-        "color": "rgba(201,152,157,1)",
-        "line": {
-          "color": "rgba(201,152,157,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(201,152,157,1)"
-      },
-      "error_y": {
-        "color": "rgba(201,152,157,1)"
-      },
-      "error_x": {
-        "color": "rgba(201,152,157,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2019", "2020", "2021"],
-      "y": [1, 3, 4],
-      "type": "bar",
-      "name": "Force (Neck Holds)",
-      "marker": {
-        "color": "rgba(175,154,200,1)",
-        "line": {
-          "color": "rgba(175,154,200,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(175,154,200,1)"
-      },
-      "error_y": {
-        "color": "rgba(175,154,200,1)"
-      },
-      "error_x": {
-        "color": "rgba(175,154,200,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
-      "y": [2, 1, 6, 2, 2, 5],
-      "type": "bar",
-      "name": "Head strike while Hancuffed",
-      "marker": {
-        "color": "rgba(226,148,184,1)",
-        "line": {
-          "color": "rgba(226,148,184,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(226,148,184,1)"
-      },
-      "error_y": {
-        "color": "rgba(226,148,184,1)"
-      },
-      "error_x": {
-        "color": "rgba(226,148,184,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
-      "y": [3, 8, 2, 5, 4, 5],
-      "type": "bar",
-      "name": "L4-Taser",
-      "marker": {
-        "color": "rgba(176,208,99,1)",
-        "line": {
-          "color": "rgba(176,208,99,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(176,208,99,1)"
-      },
-      "error_y": {
-        "color": "rgba(176,208,99,1)"
-      },
-      "error_x": {
-        "color": "rgba(176,208,99,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2018", "2020", "2021"],
-      "y": [1, 7, 2],
-      "type": "bar",
-      "name": "NonTrad Impact Weapon",
-      "marker": {
-        "color": "rgba(227,217,62,1)",
-        "line": {
-          "color": "rgba(227,217,62,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(227,217,62,1)"
-      },
-      "error_y": {
-        "color": "rgba(227,217,62,1)"
-      },
-      "error_x": {
-        "color": "rgba(227,217,62,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
-      "x": ["2016", "2020"],
-      "y": [1, 11],
-      "type": "bar",
-      "name": "Other",
-      "marker": {
-        "color": "rgba(245,207,100,1)",
-        "line": {
-          "color": "rgba(245,207,100,1)"
-        }
-      },
-      "textfont": {
-        "color": "rgba(245,207,100,1)"
-      },
-      "error_y": {
-        "color": "rgba(245,207,100,1)"
-      },
-      "error_x": {
-        "color": "rgba(245,207,100,1)"
-      },
-      "xaxis": "x",
-      "yaxis": "y",
-      "frame": null
-    },
-    {
       "x": ["2016"],
-      "y": [1],
+      "y": [29],
       "type": "bar",
-      "name": "Rifle (Discharged)",
+      "name": "Canine (No Bite)",
       "marker": {
-        "color": "rgba(219,192,155,1)",
+        "color": "rgba(252,141,98,1)",
         "line": {
-          "color": "rgba(219,192,155,1)"
+          "color": "rgba(252,141,98,1)"
         }
       },
       "textfont": {
-        "color": "rgba(219,192,155,1)"
+        "color": "rgba(252,141,98,1)"
       },
       "error_y": {
-        "color": "rgba(219,192,155,1)"
+        "color": "rgba(252,141,98,1)"
       },
       "error_x": {
-        "color": "rgba(219,192,155,1)"
+        "color": "rgba(252,141,98,1)"
       },
       "xaxis": "x",
       "yaxis": "y",
       "frame": null
     },
     {
-      "x": ["2019"],
-      "y": [48],
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [781, 749, 517, 415, 353, 337],
       "type": "bar",
-      "name": "Vehicle as Weapon",
+      "name": "Firearm Exhibited",
+      "marker": {
+        "color": "rgba(141,160,203,1)",
+        "line": {
+          "color": "rgba(141,160,203,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_y": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "error_x": {
+        "color": "rgba(141,160,203,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [374, 288, 268, 169, 187, 297],
+      "type": "bar",
+      "name": "Hands / Escort tech",
+      "marker": {
+        "color": "rgba(231,138,195,1)",
+        "line": {
+          "color": "rgba(231,138,195,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_y": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "error_x": {
+        "color": "rgba(231,138,195,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [17, 6, 7, 1, 8, 5],
+      "type": "bar",
+      "name": "L1-Other",
+      "marker": {
+        "color": "rgba(166,216,84,1)",
+        "line": {
+          "color": "rgba(166,216,84,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(166,216,84,1)"
+      },
+      "error_y": {
+        "color": "rgba(166,216,84,1)"
+      },
+      "error_x": {
+        "color": "rgba(166,216,84,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [77, 105, 65, 49, 37, 53],
+      "type": "bar",
+      "name": "No Force by Officer",
+      "marker": {
+        "color": "rgba(255,217,47,1)",
+        "line": {
+          "color": "rgba(255,217,47,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(255,217,47,1)"
+      },
+      "error_y": {
+        "color": "rgba(255,217,47,1)"
+      },
+      "error_x": {
+        "color": "rgba(255,217,47,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2018", "2019", "2020", "2021"],
+      "y": [100, 130, 122, 140],
+      "type": "bar",
+      "name": "Takedown (no injury)",
+      "marker": {
+        "color": "rgba(229,196,148,1)",
+        "line": {
+          "color": "rgba(229,196,148,1)"
+        }
+      },
+      "textfont": {
+        "color": "rgba(229,196,148,1)"
+      },
+      "error_y": {
+        "color": "rgba(229,196,148,1)"
+      },
+      "error_x": {
+        "color": "rgba(229,196,148,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["2016", "2017", "2018", "2019", "2020", "2021"],
+      "y": [118, 126, 20, 7, 1, 3],
+      "type": "bar",
+      "name": "Taser Exhibited",
       "marker": {
         "color": "rgba(179,179,179,1)",
         "line": {

@@ -3,7 +3,7 @@
 
 # Reset environment
 rm(list = ls())
-# setwd("/path/to/oipm/oipm-annual-report-2021")
+# setwd("/path/to/oipm/oipm-annual-report-2021/analysis")
 readRenviron(".Renviron")
 print(paste("Working directory set to:", getwd()))
 
@@ -56,7 +56,7 @@ BOOKINGS.CSV.DIRTY <- paste0(DATA_DIR, "/01_Raw/OPSO/20220208Simmons/bookings_20
 PUBLIC_DIR <- "public_data"
 
 # Stops
-# CALLS2.CSV.DIRTY <- paste0(OPCD_DIR, "/calls_20210701_20211231.csv")
+STOPS.CSV.PUBLIC <- paste0(PUBLIC_DIR, "/stops_20220503.csv")
 ###############################################################################
 ###################### LOAD DATA ##############################################
 
