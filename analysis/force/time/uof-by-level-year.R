@@ -15,7 +15,6 @@ lvls <- c("L1", "L2", "L3", "L4")
 years <- IAPRO.FIRST.YEAR:CURRENT.YEAR
 
 p.lvl.by.year <- lapply(lvls, function (lvl) {
-  lvl <- "L1"
   # Filter UOF by year
   uof.for.lvl <- all.uof.with.lvl.type %>% 
     filter(Force.level == lvl) %>% 

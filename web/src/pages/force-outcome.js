@@ -14,28 +14,25 @@ const ForcePage = () => (
 					<NavLink href="/force" className="text-white">Introduction &amp; City comparison</NavLink>
 				</NavItem>	
 				<NavItem>
-					<NavLink href="/force-time" className="text-white">Section 2: Force over time</NavLink>
+					<NavLink href="/force-time" className="text-white">Section 1: Force over time</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-level" className="text-white">Section 3: Force by type and level</NavLink>
+					<NavLink href="/force-level" className="text-white">Section 2: Force by type and level</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-outcome" className="text-white">Section 4: Force by outcome</NavLink>
+					<NavLink href="/force-outcome" className="text-white">Section 3: Force by outcome</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-justification" className="text-white">Section 5: Justification for force</NavLink>
+					<NavLink href="/force-justification" className="text-white">Section 4: Justification for force</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-most" className="text-white">Section 6: Officers using most force</NavLink>
+					<NavLink href="/force-most" className="text-white">Section 5: Officers using most force</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-officer" className="text-white">Section 7: By officer demographics</NavLink>
+					<NavLink href="/force-officer" className="text-white">Section 6: By officer demographics</NavLink>
 				</NavItem>
 				<NavItem>
-					<NavLink href="/force-individual" className="text-white">Section 8: By individual demographics</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="/force-future" className="text-white">Section 9: Future analysis</NavLink>
+					<NavLink href="/force-individual" className="text-white">Section 7: By individual demographics</NavLink>
 				</NavItem>
 			</Nav>
 		}

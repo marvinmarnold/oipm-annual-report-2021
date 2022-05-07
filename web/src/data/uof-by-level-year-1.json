@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1f91e67a4fae32": ["function () ", "plotlyVisDat"]
+    "b42336c2b692": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1f91e67a4fae32",
+  "cur_data": "b42336c2b692",
   "attrs": {
-    "1f91e67a4fae32": {
+    "b42336c2b692": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -38,7 +38,7 @@
     "yaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "title": "Amount of force (UOF)"
+      "title": "Amount of forc  (UOF)"
     },
     "legend": {
       "x": 0,

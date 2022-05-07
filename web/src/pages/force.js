@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
+import { Row, Col, Nav, NavItem, NavLink, Button } from 'reactstrap';
 
 // Components
 import Page from "../components/layout/page"
@@ -33,9 +33,6 @@ const ForcePage = () => (
 				</NavItem>
 				<NavItem>
 					<NavLink href="/force-individual" className="text-white">Section 8: By individual demographics</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="/force-future" className="text-white">Section 9: Future analysis</NavLink>
 				</NavItem>
 			</Nav>
 		}
