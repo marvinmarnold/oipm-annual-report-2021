@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "e1596786eb3f": ["function () ", "plotlyVisDat"]
+    "10ea75f98f4b": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "e1596786eb3f",
+  "cur_data": "10ea75f98f4b",
   "attrs": {
-    "e1596786eb3f": {
+    "10ea75f98f4b": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -28,12 +28,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "title": "Year",
-      "dtick": 1,
-      "showgrid": false,
-      "type": "category",
       "categoryorder": "array",
-      "categoryarray": ["2016", "2017", "2018", "2019", "2020", "2021"]
+      "categoryarray": [2016, 2017, 2018, 2019, 2020, 2021],
+      "title": false,
+      "showgrid": false,
+      "ticktext": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickvals": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -41,6 +42,56 @@
       "title": "Number of allegations",
       "showgrid": true
     },
+    "annotations": [
+      {
+        "x": 2016,
+        "y": 1951,
+        "text": 1951,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2017,
+        "y": 1558,
+        "text": 1558,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2018,
+        "y": 1337,
+        "text": 1337,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2019,
+        "y": 1561,
+        "text": 1561,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2020,
+        "y": 1158,
+        "text": 1158,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2021,
+        "y": 1396,
+        "text": 1396,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

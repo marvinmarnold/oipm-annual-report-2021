@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf1965c06863": ["function () ", "plotlyVisDat"]
+    "5c143be724b7": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf1965c06863",
+  "cur_data": "5c143be724b7",
   "attrs": {
-    "1ecf1965c06863": {
+    "5c143be724b7": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -27,10 +27,12 @@
       "domain": [0, 1],
       "automargin": true,
       "categoryorder": "array",
-      "categoryarray": ["Illegitimate outcome", "Sustained", "Pending", "Exonerated", "Unfounded", "Not Sustained", "NFIM", "Mediation"],
-      "title": "Complaint outcomes",
-      "showgrid": true,
-      "type": "category"
+      "categoryarray": ["Exonerated", "Illegitimate outcome", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
+      "title": false,
+      "showgrid": false,
+      "ticktext": ["Exonerated", "Illegitimate outcome", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
+      "tickvals": ["Exonerated", "Illegitimate outcome", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -38,6 +40,72 @@
       "title": "Num complaints resulting in outcome"
     },
     "barmode": "stack",
+    "annotations": [
+      {
+        "x": "Exonerated",
+        "y": 82,
+        "text": 82,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Illegitimate outcome",
+        "y": 23,
+        "text": 23,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Mediation",
+        "y": 32,
+        "text": 32,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "NFIM",
+        "y": 38,
+        "text": 38,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Not Sustained",
+        "y": 67,
+        "text": 67,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Pending",
+        "y": 295,
+        "text": 295,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Sustained",
+        "y": 217,
+        "text": 217,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Unfounded",
+        "y": 222,
+        "text": 222,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "hovermode": "closest",
     "showlegend": true
   },
@@ -49,7 +117,7 @@
   "data": [
     {
       "x": ["Exonerated", "Illegitimate outcome", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
-      "y": [39, 4, 16, 7, 37, 168, 112, 94],
+      "y": [39, 7, 16, 7, 37, 178, 112, 94],
       "type": "bar",
       "name": "Black / African American",
       "marker": {
@@ -73,7 +141,7 @@
     },
     {
       "x": ["Exonerated", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
-      "y": [9, 3, 2, 3, 10, 13, 18],
+      "y": [9, 3, 2, 3, 12, 13, 18],
       "type": "bar",
       "name": "Hispanic",
       "marker": {
@@ -97,7 +165,7 @@
     },
     {
       "x": ["Illegitimate outcome", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
-      "y": [8, 27, 8, 21, 11, 12],
+      "y": [9, 27, 8, 22, 11, 12],
       "type": "bar",
       "name": "Unknown race",
       "marker": {
@@ -121,7 +189,7 @@
     },
     {
       "x": ["Exonerated", "Illegitimate outcome", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
-      "y": [34, 5, 13, 2, 19, 79, 81, 98],
+      "y": [34, 7, 13, 2, 19, 83, 81, 98],
       "type": "bar",
       "name": "White",
       "marker": {

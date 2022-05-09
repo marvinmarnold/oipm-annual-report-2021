@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf1931ff3979": ["function () ", "plotlyVisDat"]
+    "5c14202394b5": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf1931ff3979",
+  "cur_data": "5c14202394b5",
   "attrs": {
-    "1ecf1931ff3979": {
+    "5c14202394b5": {
       "labels": {},
       "values": {},
       "marker": {
@@ -39,7 +39,7 @@
   "data": [
     {
       "labels": ["Data Inconsistency", "Exonerated", "Mediation", "NFIM", "Not Sustained", "Pending", "Sustained", "Unfounded"],
-      "values": [10, 43, 24, 36, 46, 192, 165, 146],
+      "values": [15, 43, 24, 36, 46, 199, 165, 146],
       "marker": {
         "color": "rgba(31,119,180,1)",
         "colors": ["yellow", "black", "cyan", "orange", "green", "magenta", "pink", "blue"],

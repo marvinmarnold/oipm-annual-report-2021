@@ -60,6 +60,17 @@ grouped.fourth.violations <- fourth.violations %>% group_by(friendly.name, Alleg
 count.fourth.violations <- grouped.fourth.violations %>% summarise(num.allegs = n())
 count.fourth.violations
 
+bar.data <-  fourth.violations %>% group_by(friendly.name) %>%
+  summarise(count = n())
+
+bar.labels <- bar.data %>% pull(count)
+bar.categories <- bar.data %>% pull(friendly.name)
+
+annotations <- list(x = bar.categories, y = bar.labels, text = bar.labels, xanchor = 'center',
+              yanchor = 'bottom',
+              showarrow = FALSE)
+              
+
 p.fourth.viol.outcomes <- plot_ly(count.fourth.violations,
                                   x = ~friendly.name,
                                   y = ~num.allegs,
@@ -68,12 +79,19 @@ p.fourth.viol.outcomes <- plot_ly(count.fourth.violations,
                                   color = ~Allegation.finding
 ) %>% 
   
-  layout(xaxis = list(title = F, 
-                      showgrid = F), 
+  layout(xaxis = list(categoryorder = "array",
+                        categoryarray = bar.categories,
+                        title = F, 
+                        showgrid = F, 
+                        ticktext = bar.categories, 
+                        tickvals = bar.categories,
+                        tickmode = "array"), 
          yaxis = list(title = 'Number of complaints'), 
          barmode = 'stack',
          hovermode = 'compare', 
-         margin = list(r = 100, b = 135))
+         margin = list(r = 100, b = 135)) %>%
+  
+  layout(annotations = annotations)
 
 p.fourth.viol.outcomes
 gen.plotly.json(p.fourth.viol.outcomes, "allegations-fourth-by-description-finding")

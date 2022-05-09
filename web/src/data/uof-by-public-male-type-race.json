@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "e1591ab2df13": ["function () ", "plotlyVisDat"]
+    "5c14c39af42": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "e1591ab2df13",
+  "cur_data": "5c14c39af42",
   "attrs": {
-    "e1591ab2df13": {
+    "5c14c39af42": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "showgrid": false,
-      "title": "Force.type",
-      "type": "category",
       "categoryorder": "array",
-      "categoryarray": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton (non-strike)", "Baton Miss", "Baton/PR-24 (Strike)", "Canine (Bite)", "Canine (No Bite)", "Defense Tech / Take-down", "Firearm Discharged", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "Head strike while Hancuffed", "L1-Other", "L2-Other", "L2-Taser", "L4-Taser", "No Force by Officer", "NonTrad Impact Weapon", "Not reported", "Other", "Takedown (no injury)", "Takedown (w/injury)", "Taser Exhibited"]
+      "categoryarray": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton (non-strike)", "Baton Miss", "Baton/PR-24 (Strike)", "Canine (Bite)", "Canine (No Bite)", "Defense Tech / Take-down", "Firearm Discharged", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "Head strike while Hancuffed", "L1-Other", "L2-Other", "L2-Taser", "L4-Taser", "No Force by Officer", "NonTrad Impact Weapon", "Not reported", "Other", "Takedown (no injury)", "Takedown (w/injury)", "Taser Exhibited"],
+      "title": false,
+      "showgrid": false,
+      "ticktext": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton (non-strike)", "Baton Miss", "Baton/PR-24 (Strike)", "Canine (Bite)", "Canine (No Bite)", "Defense Tech / Take-down", "Firearm Discharged", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "Head strike while Hancuffed", "L1-Other", "L2-Other", "L2-Taser", "L4-Taser", "No Force by Officer", "NonTrad Impact Weapon", "Not reported", "Other", "Takedown (no injury)", "Takedown (w/injury)", "Taser Exhibited"],
+      "tickvals": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton (non-strike)", "Baton Miss", "Baton/PR-24 (Strike)", "Canine (Bite)", "Canine (No Bite)", "Defense Tech / Take-down", "Firearm Discharged", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "Head strike while Hancuffed", "L1-Other", "L2-Other", "L2-Taser", "L4-Taser", "No Force by Officer", "NonTrad Impact Weapon", "Not reported", "Other", "Takedown (no injury)", "Takedown (w/injury)", "Taser Exhibited"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -38,6 +40,208 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": " VehPursuits w/Injury",
+        "y": 15,
+        "text": 15,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "- Hands (with injury)",
+        "y": 21,
+        "text": 21,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Baton (non-strike)",
+        "y": 2,
+        "text": 2,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Baton Miss",
+        "y": 2,
+        "text": 2,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Baton/PR-24 (Strike)",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Canine (Bite)",
+        "y": 4,
+        "text": 4,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Canine (No Bite)",
+        "y": 21,
+        "text": 21,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Defense Tech / Take-down",
+        "y": 26,
+        "text": 26,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Firearm Discharged",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Firearm Exhibited",
+        "y": 314,
+        "text": 314,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Force (Neck Holds)",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Hands / Escort tech",
+        "y": 233,
+        "text": 233,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Head Strike (No Wep)",
+        "y": 5,
+        "text": 5,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Head strike while Hancuffed",
+        "y": 5,
+        "text": 5,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L1-Other",
+        "y": 4,
+        "text": 4,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L2-Other",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L2-Taser",
+        "y": 33,
+        "text": 33,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L4-Taser",
+        "y": 5,
+        "text": 5,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "No Force by Officer",
+        "y": 43,
+        "text": 43,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "NonTrad Impact Weapon",
+        "y": 2,
+        "text": 2,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Not reported",
+        "y": 26,
+        "text": 26,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Other",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Takedown (no injury)",
+        "y": 125,
+        "text": 125,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Takedown (w/injury)",
+        "y": 38,
+        "text": 38,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Taser Exhibited",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

@@ -136,7 +136,7 @@ allegations.all <- allegations.all %>%
       grepl("Unfounded", Allegation.finding, ignore.case = TRUE) ~ "Unfounded",
       grepl("Exonerated", Allegation.finding, ignore.case = TRUE) ~ "Exonerated",
       grepl("mediation", Allegation.finding, ignore.case = TRUE) ~ "Mediation",
-      TRUE ~ Allegation.finding
+      TRUE ~ "Data Inconsistency"
     )
   )
 

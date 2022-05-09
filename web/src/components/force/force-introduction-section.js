@@ -13,16 +13,12 @@ const ForceIntroductionSection = () => (
 				<h4>FTN &amp; UOF</h4>
 				<p>FTN stands for “force tracking number”. It is the designation given to track the entirety
 					of an interaction between NOPD and one or more individuals wherein force was used.</p>
-				<p>There were 441 FTNs issued in 2018. Those cases were analyzed for this report.</p>
 				<p>UOF stands for “use of force”. It represents a specific type of force used by a specific
-					officer against a specific person. There were 1,108 UOFs in 2018.</p>
+					officer against a specific person.</p>
 				<p>A single FTN corresponds to one or more UOF. If Officer A and Officer B both use their
 				hands against Individual C, the result would be one FTN, corresponding to two UOFs (one for each officer).
 				The same pattern would apply if there were multiple types of
 				force used or multiple individuals that force was used on.</p>
-				There were 2.5 times more UOFs than FTNs. This means that each incident involved an
-				average of 2.5 different types of force, officers, or individuals. In 2017, the ratio was 2.6
-				UOF per FTN.
 				<p>This report will always clearly label whether FTN or UOF is being used for an analysis,
 				but the onus is on the reader to remain vigilant of the distinction.</p>
 

@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf196b69c68d": ["function () ", "plotlyVisDat"]
+    "5c143f9fdce9": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf196b69c68d",
+  "cur_data": "5c143f9fdce9",
   "attrs": {
-    "1ecf196b69c68d": {
+    "5c143f9fdce9": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "title": "Type of complaint",
-      "showgrid": false,
-      "type": "category",
       "categoryorder": "array",
-      "categoryarray": ["Public Initiated", "Rank Initiated"]
+      "categoryarray": ["Public Initiated", "Rank Initiated"],
+      "title": false,
+      "showgrid": false,
+      "ticktext": ["Public Initiated", "Rank Initiated"],
+      "tickvals": ["Public Initiated", "Rank Initiated"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -38,6 +40,24 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": "Public Initiated",
+        "y": 374,
+        "text": 374,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Rank Initiated",
+        "y": 300,
+        "text": 300,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",
@@ -72,7 +92,7 @@
     },
     {
       "x": ["Public Initiated", "Rank Initiated"],
-      "y": [305, 168],
+      "y": [312, 173],
       "name": "Other",
       "type": "bar",
       "marker": {

@@ -13,14 +13,22 @@ count.by.rank.disposition <- complaints.for.year %>% mutate(
   group_by(Incident.type, disposition.simple) %>% 
   summarise(num.complaints = n())
 
+bar.data <- complaints.for.year %>% mutate(
+  disposition.simple = case_when(
+    Disposition.OIPM == "Sustained" ~ "Sustained",
+    Disposition.OIPM == "Mediation" ~ "Mediation",
+    TRUE ~ "Other"
+  )
+) %>%
+  group_by(Incident.type) %>%
+       summarise(count = n())
 
-xs <- c("Public Initiated", "Public Initiated", "Public Initiated", "Rank Initiated", "Rank Initiated", "Rank Initiated")
-ys <- c(26, 355, 425, 1, 100, 254)
-vals <- c(26, 329, 70, 1, 99, 154)
+bar.labels <- bar.data %>% pull(count)
+bar.categories <- bar.data %>% pull(Incident.type)
 
-annotations <- list(x = xs, y = ys, text = vals, xanchor = 'center',
-                    yanchor = 'top',
-                    showarrow = FALSE)
+annotations <- list(x = bar.categories, y = bar.labels, text = bar.labels, xanchor = 'center',
+              yanchor = 'bottom',
+              showarrow = FALSE)
 
 p.complaints.by.rank.disposition <- plot_ly(count.by.rank.disposition, 
                                             x = ~Incident.type, 
@@ -28,15 +36,17 @@ p.complaints.by.rank.disposition <- plot_ly(count.by.rank.disposition,
                                             type = 'bar',  name = ~disposition.simple, 
                                             color = ~disposition.simple) %>%
   
-  layout(xaxis = list(title = "Type of complaint", 
-                      showgrid = F), 
+  layout(xaxis = list(categoryorder = "array",
+                        categoryarray = bar.categories,
+                        title = F, 
+                        showgrid = F, 
+                        ticktext = bar.categories, 
+                        tickvals = bar.categories,
+                        tickmode = "array"), 
          yaxis = list(title = 'Number complaints'), 
          barmode = 'stack',
          hovermode = 'compare', 
-         margin = list(r = 100, b = 100))
-
-  
-#  layout(annotations = annotations)
+         margin = list(r = 100, b = 100)) %>% layout(annotations = annotations)
 
 p.complaints.by.rank.disposition
 gen.plotly.json(p.complaints.by.rank.disposition, "complaints-by-source-disposition")

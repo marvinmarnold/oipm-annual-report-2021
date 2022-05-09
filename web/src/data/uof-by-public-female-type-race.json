@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "e15956535a1d": ["function () ", "plotlyVisDat"]
+    "5c1479cd6ca": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "e15956535a1d",
+  "cur_data": "5c1479cd6ca",
   "attrs": {
-    "e15956535a1d": {
+    "5c1479cd6ca": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "showgrid": false,
-      "title": "Force.type",
-      "type": "category",
       "categoryorder": "array",
-      "categoryarray": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton Miss", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"]
+      "categoryarray": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton Miss", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"],
+      "title": false,
+      "showgrid": false,
+      "ticktext": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton Miss", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"],
+      "tickvals": [" VehPursuits w/Injury", "- Hands (with injury)", "Baton Miss", "Defense Tech / Take-down", "Firearm Exhibited", "Force (Neck Holds)", "Hands / Escort tech", "Head Strike (No Wep)", "L1-Other", "No Force by Officer", "Not reported", "Takedown (no injury)", "Takedown (w/injury)"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -38,6 +40,112 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": " VehPursuits w/Injury",
+        "y": 6,
+        "text": 6,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "- Hands (with injury)",
+        "y": 8,
+        "text": 8,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Baton Miss",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Defense Tech / Take-down",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Firearm Exhibited",
+        "y": 19,
+        "text": 19,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Force (Neck Holds)",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Hands / Escort tech",
+        "y": 61,
+        "text": 61,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Head Strike (No Wep)",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "L1-Other",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "No Force by Officer",
+        "y": 9,
+        "text": 9,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Not reported",
+        "y": 4,
+        "text": 4,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Takedown (no injury)",
+        "y": 15,
+        "text": 15,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Takedown (w/injury)",
+        "y": 8,
+        "text": 8,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

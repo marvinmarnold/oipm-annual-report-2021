@@ -38,7 +38,7 @@ p.ftn.by.year <- plot_ly(count.ftn.by.year, x = ~year,
                          text = ~num,
                          textposition = "top right",
                          line = list(color = 'rgb(22, 96, 167)', width = 3, dash = 'solid')) %>%
-  
+
   # ftn according to data.nola.gov
   add_trace(x=nopd.ftn.years, y = nopd.ftn, name = 'Paper reports', 
             line = list(color = 'rgb(205, 12, 24)', width = 2, dash = 'dot'), 

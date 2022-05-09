@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "d85d26bb8fe13": ["function () ", "plotlyVisDat"]
+    "5c146c04e4a2": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "d85d26bb8fe13",
+  "cur_data": "5c146c04e4a2",
   "attrs": {
-    "d85d26bb8fe13": {
+    "5c146c04e4a2": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "showgrid": false,
-      "title": false,
-      "type": "category",
       "categoryorder": "array",
-      "categoryarray": ["F", "M", "Unknown sex"]
+      "categoryarray": ["F", "M", "Unknown sex"],
+      "title": false,
+      "showgrid": false,
+      "ticktext": ["F", "M", "Unknown sex"],
+      "tickvals": ["F", "M", "Unknown sex"],
+      "tickmode": "sexes"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -42,6 +44,32 @@
       "y": -0.5
     },
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": "F",
+        "y": 136,
+        "text": 136,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "M",
+        "y": 949,
+        "text": 949,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Unknown sex",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

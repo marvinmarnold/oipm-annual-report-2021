@@ -45,10 +45,6 @@ class ComplaintsHighlightsPage extends React.Component {
 				<Row>
 					<Col>
 						<h4>Complaints &amp; Allegations by Year</h4>
-						<p>Complaints appear to have slight decrease in 2018 and 2017 compared with 2016. This appears to be on
-trend with other United States police departments of similar size, which are experiencing stagnation in
-complaints or decreases. Given that complaint decreases are taking place in metropolitan police departments
-across the U.S., this may indicate a universal reform in policing over the past few years.</p>
 					</Col>
 				</Row>
 				<Row>
@@ -78,7 +74,7 @@ across the U.S., this may indicate a universal reform in policing over the past 
 					<div>
 						<Row>
 							<Col>
-								<h1 className="mt-5 text-center">2018 Annual Report</h1>
+								<h1 className="mt-5 text-center">2021 Annual Report</h1>
 								<h2 className="mb-5 text-center">Complaints, Commendations &amp; Disciplinary Proceedings</h2>
 							</Col>
 						</Row>

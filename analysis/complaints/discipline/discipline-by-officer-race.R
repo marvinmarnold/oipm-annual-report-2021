@@ -18,19 +18,35 @@ detailed.actions.for.year <- detailed.actions.for.year %>% mutate(
 discipline.by.race <- detailed.actions.for.year %>% group_by(Action.taken.OIPM, Officer.Race)
 discipline.count.by.race <- summarize(discipline.by.race, num.allegations = n())
 
+bar.data <- detailed.actions.for.year %>% group_by(Action.taken.OIPM) %>% 
+       summarise(count = n())
+bar.labels <- bar.data %>% pull(count)
+bar.categories <- bar.data %>% pull(Action.taken.OIPM)
+
+annotations <- list(x = bar.categories, y = bar.labels, text = bar.labels, xanchor = 'center',
+              yanchor = 'bottom',
+              showarrow = FALSE)
+
 p.discipline.by.officer.race <- plot_ly(discipline.count.by.race, 
                                         x = ~Action.taken.OIPM, y = ~num.allegations, 
                                         type = 'bar',  name = ~Officer.Race, 
                                         color = ~Officer.Race) %>%
   
-  layout(xaxis = list(title = F, 
-                      showgrid = F), 
+  layout(xaxis = list(categoryorder = "array",
+                        categoryarray = bar.categories,
+                        title = F, 
+                        showgrid = F, 
+                        ticktext = bar.categories, 
+                        tickvals = bar.categories,
+                        tickmode = "array"), 
          yaxis = list(title = 'Number allegations'), 
          barmode = 'stack',
          hovermode = 'compare', 
          legend = list(x = 0, y = -1.5),
          margin = list(r = 100, b = 100),
-         title = F)
+         title = F) %>%
+  
+  layout(annotations = annotations)
 
 p.discipline.by.officer.race
 gen.plotly.json(p.discipline.by.officer.race, "discipline-by-officer-race")
