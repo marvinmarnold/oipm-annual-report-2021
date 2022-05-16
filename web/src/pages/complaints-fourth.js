@@ -50,17 +50,6 @@ class ComplaintsHighlightsPage extends React.Component {
 
 						<h5 className="text-center">FIGURE 14: FOURTH AMENDMENT ALLEGATIONS BY OUTCOME</h5>
 						<AllegationsFourthByDescriptionFindingPlot />
-
-						<p>Search and seizure and handcuffing and restraint were the two high risk allegations that composed Fourth
-Amendment allegations. According to NOPD data, illegal search and seizure was more prevalent than
-handcuffing and restraints in 2018 at 85.4% of allegations. There were 29 total Fourth Amendment sustained
-allegations in 2018.</p>
-						<p>Furthermore, NOPD’s data does not make is easy to identify possible 4 th Amendment related allegations.
-Moving forward, NOPD and OIPM will work on this issue together.</p>
-						<p>The outcomes of Fourth Amendment allegations were relatively similar for both search and seizure and
-handcuffing and restraint. In both instances, the number of sustained allegations matches that of those
-exonerated. This is a slight deviation from 2017, when exonerations were nearly twice as likely as sustained
-allegations. These findings may indicate a greater accountability mechanism in the department.</p>
 					</Col>
 				</Row>
 			</div>
@@ -77,7 +66,7 @@ allegations. These findings may indicate a greater accountability mechanism in t
 					<div>
 						<Row>
 							<Col>
-								<h1 className="mt-5 text-center">2018 Annual Report</h1>
+								<h1 className="mt-5 text-center">2021 Annual Report</h1>
 								<h2 className="mb-5 text-center">Complaints, Commendations &amp; Disciplinary Proceedings</h2>
 							</Col>
 						</Row>

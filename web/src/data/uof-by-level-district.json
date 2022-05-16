@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf197dd68f59": ["function () ", "plotlyVisDat"]
+    "b4233cbe495e": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf197dd68f59",
+  "cur_data": "b4233cbe495e",
   "attrs": {
-    "1ecf197dd68f59": {
+    "b4233cbe495e": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -40,6 +40,96 @@
       "title": "Amount of force (UOF)",
       "showgrid": true
     },
+    "annotations": [
+      {
+        "x": "1st District",
+        "y": 51,
+        "text": 51,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "2nd District",
+        "y": 131,
+        "text": 131,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "3rd District",
+        "y": 147,
+        "text": 147,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "4th District",
+        "y": 61,
+        "text": 61,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "5th District",
+        "y": 142,
+        "text": 142,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "6th District",
+        "y": 137,
+        "text": 137,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "7th District",
+        "y": 134,
+        "text": 134,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "8th District",
+        "y": 180,
+        "text": 180,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Other",
+        "y": 14,
+        "text": 14,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Special Operations",
+        "y": 86,
+        "text": 86,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Special or Criminal Investigations",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

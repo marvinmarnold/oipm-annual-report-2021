@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf19c5f4ebd": ["function () ", "plotlyVisDat"]
+    "5c141a004f2c": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf19c5f4ebd",
+  "cur_data": "5c141a004f2c",
   "attrs": {
-    "1ecf19c5f4ebd": {
+    "5c141a004f2c": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["Handcuffing & Restraint (1.3.1.1)", "Search & Seizure (1.2.4)"],
       "title": false,
       "showgrid": false,
-      "type": "category",
-      "categoryorder": "array",
-      "categoryarray": ["Handcuffing & Restraint (1.3.1.1)", "Search & Seizure (1.2.4)"]
+      "ticktext": ["Handcuffing & Restraint (1.3.1.1)", "Search & Seizure (1.2.4)"],
+      "tickvals": ["Handcuffing & Restraint (1.3.1.1)", "Search & Seizure (1.2.4)"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -38,6 +40,24 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": "Handcuffing & Restraint (1.3.1.1)",
+        "y": 7,
+        "text": 7,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Search & Seizure (1.2.4)",
+        "y": 9,
+        "text": 9,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

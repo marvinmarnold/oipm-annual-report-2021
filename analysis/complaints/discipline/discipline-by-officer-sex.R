@@ -17,17 +17,33 @@ detailed.actions.for.year <- detailed.actions.for.year %>% mutate(
 discipline.by.sex <- detailed.actions.for.year %>% group_by(Action.taken.OIPM, Officer.sex)
 discipline.count.by.sex <- summarize(discipline.by.sex, num.allegations = n())
 
+bar.data <- detailed.actions.for.year %>% group_by(Action.taken.OIPM) %>% 
+       summarise(count = n())
+bar.labels <- bar.data %>% pull(count)
+bar.categories <- bar.data %>% pull(Action.taken.OIPM)
+
+annotations <- list(x = bar.categories, y = bar.labels, text = bar.labels, xanchor = 'center',
+              yanchor = 'bottom',
+              showarrow = FALSE)
+
 p.discipline.by.officer.sex <- plot_ly(discipline.count.by.sex, 
                                        x = ~Action.taken.OIPM, y = ~num.allegations, 
                                        type = 'bar',  name = ~Officer.sex, 
                                        color = ~Officer.sex) %>%
   
-  layout(xaxis = list(title = F, 
-                      showgrid = F), 
+  layout(xaxis = list(categoryorder = "array",
+                        categoryarray = bar.categories,
+                        title = F, 
+                        showgrid = F, 
+                        ticktext = bar.categories, 
+                        tickvals = bar.categories,
+                        tickmode = "array"), 
          yaxis = list(title = 'Number allegations'), 
          barmode = 'stack',
          hovermode = 'compare', 
-         margin = list(r = 100, b = 100))
+         margin = list(r = 100, b = 100)) %>%
+  
+  layout(annotations = annotations)
 
 p.discipline.by.officer.sex
 gen.plotly.json(p.discipline.by.officer.sex, "discipline-by-officer-sex")

@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "1ecf196b116c78": ["function () ", "plotlyVisDat"]
+    "5c1442496bed": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "1ecf196b116c78",
+  "cur_data": "5c1442496bed",
   "attrs": {
-    "1ecf196b116c78": {
+    "5c1442496bed": {
       "x": {},
       "y": {},
       "name": {},
@@ -25,11 +25,13 @@
     "xaxis": {
       "domain": [0, 1],
       "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
       "title": false,
       "showgrid": false,
-      "type": "category",
-      "categoryorder": "array",
-      "categoryarray": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"]
+      "ticktext": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "tickvals": ["DI-2", "Dismissed", "Illegitimate outcome", "Letter of Reprimand", "Mediation", "Resigned before disposition", "Suspension", "Unknown action taken"],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
@@ -43,6 +45,72 @@
       "y": -1.5
     },
     "title": false,
+    "annotations": [
+      {
+        "x": "DI-2",
+        "y": 1,
+        "text": 1,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Dismissed",
+        "y": 3,
+        "text": 3,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Illegitimate outcome",
+        "y": 182,
+        "text": 182,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Letter of Reprimand",
+        "y": 64,
+        "text": 64,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Mediation",
+        "y": 24,
+        "text": 24,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Resigned before disposition",
+        "y": 27,
+        "text": 27,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Suspension",
+        "y": 53,
+        "text": 53,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": "Unknown action taken",
+        "y": 46,
+        "text": 46,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

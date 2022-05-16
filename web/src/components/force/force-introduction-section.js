@@ -13,16 +13,12 @@ const ForceIntroductionSection = () => (
 				<h4>FTN &amp; UOF</h4>
 				<p>FTN stands for “force tracking number”. It is the designation given to track the entirety
 					of an interaction between NOPD and one or more individuals wherein force was used.</p>
-				<p>There were 441 FTNs issued in 2018. Those cases were analyzed for this report.</p>
 				<p>UOF stands for “use of force”. It represents a specific type of force used by a specific
-					officer against a specific person. There were 1,108 UOFs in 2018.</p>
+					officer against a specific person.</p>
 				<p>A single FTN corresponds to one or more UOF. If Officer A and Officer B both use their
 				hands against Individual C, the result would be one FTN, corresponding to two UOFs (one for each officer).
 				The same pattern would apply if there were multiple types of
 				force used or multiple individuals that force was used on.</p>
-				There were 2.5 times more UOFs than FTNs. This means that each incident involved an
-				average of 2.5 different types of force, officers, or individuals. In 2017, the ratio was 2.6
-				UOF per FTN.
 				<p>This report will always clearly label whether FTN or UOF is being used for an analysis,
 				but the onus is on the reader to remain vigilant of the distinction.</p>
 
@@ -52,42 +48,6 @@ const ForceIntroductionSection = () => (
 				considered. Following a recommendation from NOPD, OIPM has decided to refer to
 				this group as ‘individuals. It is our hope that this terminology adequately reflects the
 				humanity of persons that force is used against.</p>
-			</Col>
-		</Row>
-		<Row>
-			<Col>
-				<h2 id="force-city-section">Section I: Comparison to Other Cities</h2>
-				<h4>Amount of Force Compared to Other Cities</h4>
-			</Col>
-		</Row>
-		<Row>
-			<Col>
-				{/* <ForceByCityPlot /> */}
-			</Col>
-		</Row>
-		<Row>
-			<Col>
-				<h5 className="text-center">FIGURE 1: NOPD FORCE (UOF) COMPARED TO OTHER CITIES</h5>
-				<p>
-					Every police department in USA has different policies about the use of force. Each
-					department also has different tools, such as body-worn cameras, which can be used to
-					more accurately capture force incidents. Furthermore, the cities in which every police
-					department operates is also unique in its demographics and crime patterns.
-				</p>
-				<p>Despite these known issues with comparing use of force statistics from other
-				jurisdictions, the figure above helps give a generalized understanding of how New
-				Orleans compares to other cities.</p>
-				<p>New Orleans is the smallest city being compared. The city populations (city only, not
-				metro area) are as follows:</p>
-				<ul>
-					<li>Austin: 950,715</li>
-					<li>D.C.: 702,455</li>
-					<li>Indianapolis: 863,002</li>
-					<li>New Orleans: 343,829</li>
-				</ul>
-				<p>New Orleans uses the second most amount of force compared to other cities in terms of
-				force per resident and force per arrest and the least relative force when looked at from a
-				per-officer basis.</p>
 			</Col>
 		</Row>
 	</div>

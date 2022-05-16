@@ -12,10 +12,6 @@ xs <- c(2016, 2016, 2017, 2017, 2018, 2018)
 ys <- c(845, 585, 448, 729, 425, 679)
 vals <- c(260, 585, 448, 281, 425, 254)
 
-annotations <- list(x = xs, y = ys, text = vals, xanchor = 'center',
-                    yanchor = 'top',
-                    showarrow = FALSE)
-
 complaints.by.year <- allegations.all %>% 
   filter(year.of.record >= start.year) %>%
   filter(year.of.record <= end.year) %>%
@@ -23,6 +19,15 @@ complaints.by.year <- allegations.all %>%
   group_by(year.of.record, Incident.type)
 
 complaint.count.by.year.type <- summarise(complaints.by.year, num = n())
+
+bar.labels <- complaint.count.by.year.type %>%
+    group_by(year.of.record) %>%
+    summarise(count = sum(num)) %>%
+    pull(count)
+
+annotations <- list(x = years.all, y = bar.labels, text = bar.labels, xanchor = 'center',
+                    yanchor = 'bottom',
+                    showarrow = FALSE)
 
 p.complaints.by.year.type <- plot_ly(complaint.count.by.year.type) %>%
   
@@ -36,12 +41,16 @@ p.complaints.by.year.type <- plot_ly(complaint.count.by.year.type) %>%
   layout(barmode = 'stack',
          margin = list(b = 150),
          hovermode = 'compare',
-         xaxis = list(title = "Year", 
-                      dtick = 1,
-                      showgrid = F), 
+         xaxis = list(categoryorder = "array",
+                        categoryarray = years.all,
+                        title = F, 
+                        showgrid = F, 
+                        ticktext = years.all, 
+                        tickvals = years.all,
+                        tickmode = "array"), 
          
-         yaxis = list(title = "Number of complaints", showgrid = T)) 
-# %>%  layout(annotations = annotations)
+         yaxis = list(title = "Number of complaints", showgrid = T))  %>%
+         layout(annotations = annotations)
 
 p.complaints.by.year.type
 gen.plotly.json(p.complaints.by.year.type, "complaints-by-year-type")

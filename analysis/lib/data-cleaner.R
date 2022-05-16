@@ -1,77 +1,6 @@
-###############################################################################
-###################### 2021 ANNUAL REPORT MAIN SCRIPT #########################
-
-# Reset environment
-rm(list = ls())
-# setwd("/path/to/oipm/oipm-annual-report-2021/analysis")
-readRenviron(".Renviron")
-print(paste("Working directory set to:", getwd()))
-
-###############################################################################
-###################### GLOBAL VARIABLES #######################################
-#setwd("/home/pili/code/oipm/annual-report-2018/")
-
-# The current year to analyze
-IAPRO.FIRST.YEAR <- 2016
-CURRENT.YEAR <- 2021
-PLOTLY.OUTPUT.PATH <- "../web/src/data/"
-
-# Will force all the graphs to recompute
-REGEN_ANALYSIS <- TRUE
-
-CSV_SEP <- ","
-
-###############################################################################
-###################### LOAD DEPENDENCIES ######################################
-# Load libraries
-library(dplyr)
-library(plotly)
-# library(tidyr)
-#library(geojsonio)
-#library(maptools)
-#library(leaflet)
-
-# Local helpers
-source("lib/utils.R")
-
-###############################################################################
-###################### DATA ###################################################
-## Private data
-DATA_DIR <- Sys.getenv("DATA_DIR")
-
-# IAPro - use of force and complaints
-IAPRO_DIR <- paste0(DATA_DIR, "/00_Original/20220424_MarvinVPN/data")
-UOF.CSV.DIRTY <- paste0(IAPRO_DIR, "/uof_20220424.csv")
-ALLEGATIONS.CSV.DIRTY <- paste0(IAPRO_DIR, "/allegations_20220424.csv")
-ACTIONSTAKEN.CSV.DIRTY <- paste0(IAPRO_DIR, "/actionstaken_20220424.csv")
-
-# OPCD
-# OPCD_DIR <- paste0(DATA_DIR, "/01_Raw/OPCD")
-
-# OPSO
-# AS400 - Bookings
-BOOKINGS.CSV.DIRTY <- paste0(DATA_DIR, "/01_Raw/OPSO/20220208Simmons/bookings_2015_2021.CSV")
-
-## Public data
-PUBLIC_DIR <- "public_data"
-
-# Stops
-STOPS.CSV.PUBLIC <- paste0(PUBLIC_DIR, "/stops_20220503.csv")
-###############################################################################
-###################### LOAD DATA ##############################################
-
-uof.all <- read.csv(UOF.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
-allegations.all <- read.csv(ALLEGATIONS.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
-actions.taken.all <- read.csv(ACTIONSTAKEN.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
-
-stops.all <- read.csv(STOPS.CSV.PUBLIC, stringsAsFactors = FALSE, sep = CSV_SEP)
-bookings.all <- read.csv(BOOKINGS.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
-###############################################################################
-###################### PREPARE DATA ###########################################
-
+clean
 uof.all <- uof.all %>% mutate(
-  year.of.record = substr(FIT.Number, 4, 7),
-  year = year.of.record
+  year.of.record = substr(FIT.Number, 4, 7)
 )
 uof.for.year <- uof.all %>% filter(year.of.record == CURRENT.YEAR)
 
@@ -136,7 +65,7 @@ allegations.all <- allegations.all %>%
       grepl("Unfounded", Allegation.finding, ignore.case = TRUE) ~ "Unfounded",
       grepl("Exonerated", Allegation.finding, ignore.case = TRUE) ~ "Exonerated",
       grepl("mediation", Allegation.finding, ignore.case = TRUE) ~ "Mediation",
-      TRUE ~ "Data Inconsistency"
+      TRUE ~ Allegation.finding
     )
   )
 
@@ -189,32 +118,3 @@ actions.taken.all <- actions.taken.all %>%
     Allegation.simple = Allegation
   )
 actions.taken.for.year <- actions.taken.all %>% filter(Action.taken.year == CURRENT.YEAR)
-
-## Stops
-stops.all <- stops.all %>%
-    mutate(
-        date = as.Date(EventDate, "%m/%d/20%y"),
-        year = format(date, "%Y"),
-        month = format(date, "%m")
-    )
-
-stops.for.year <- stops.all %>% filter(year == CURRENT.YEAR)
-
-## Bookings
-bookings.all <- bookings.all %>%
-    mutate(
-        date = as.Date(Check.In.Date, "20%y/%m/%d"),
-        year = format(date, "%Y"),
-        month.in = format(date, "%m")
-    )
-
-bookings.for.year <- bookings.all %>% filter(year == CURRENT.YEAR)
-###############################################################################
-###################### PERFORM ANALYSIS #######################################
-
-if (REGEN_ANALYSIS) {
-  print("Going to run all analysis")
-  load.subdirectory("force")
-}
-
-allegations.all %>% select(Allegation.finding) %>% distinct()

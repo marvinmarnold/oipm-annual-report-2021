@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "d85d21413b315": ["function () ", "plotlyVisDat"]
+    "b42329757703": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "d85d21413b315",
+  "cur_data": "b42329757703",
   "attrs": {
-    "d85d21413b315": {
+    "b42329757703": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -28,17 +28,17 @@
       "domain": [0, 1],
       "automargin": true,
       "categoryorder": "array",
-      "categoryarray": ["L1", "L2", "L3", "L4"],
+      "categoryarray": [2016, 2017, 2018, 2019, 2020, 2021],
       "title": false,
       "showgrid": false,
-      "dtick": 1,
-      "tick0": 2016,
-      "type": "category"
+      "ticktext": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickvals": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "title": "Amount of force (UOF)"
+      "title": "Amount of forc  (UOF)"
     },
     "legend": {
       "x": 0,
@@ -46,6 +46,56 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": 2016,
+        "y": 22,
+        "text": 22,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2017,
+        "y": 16,
+        "text": 16,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2018,
+        "y": 9,
+        "text": 9,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2019,
+        "y": 79,
+        "text": 79,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2020,
+        "y": 31,
+        "text": 31,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2021,
+        "y": 44,
+        "text": 44,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

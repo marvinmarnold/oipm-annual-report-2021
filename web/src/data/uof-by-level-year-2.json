@@ -1,10 +1,10 @@
 {
   "visdat": {
-    "d85d2373db841": ["function () ", "plotlyVisDat"]
+    "b42329604754": ["function () ", "plotlyVisDat"]
   },
-  "cur_data": "d85d2373db841",
+  "cur_data": "b42329604754",
   "attrs": {
-    "d85d2373db841": {
+    "b42329604754": {
       "alpha_stroke": 1,
       "sizes": [10, 100],
       "spans": [1, 20],
@@ -28,17 +28,17 @@
       "domain": [0, 1],
       "automargin": true,
       "categoryorder": "array",
-      "categoryarray": ["L1", "L2", "L3", "L4"],
+      "categoryarray": [2016, 2017, 2018, 2019, 2020, 2021],
       "title": false,
       "showgrid": false,
-      "dtick": 1,
-      "tick0": 2016,
-      "type": "category"
+      "ticktext": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickvals": [2016, 2017, 2018, 2019, 2020, 2021],
+      "tickmode": "array"
     },
     "yaxis": {
       "domain": [0, 1],
       "automargin": true,
-      "title": "Amount of force (UOF)"
+      "title": "Amount of forc  (UOF)"
     },
     "legend": {
       "x": 0,
@@ -46,6 +46,56 @@
     },
     "barmode": "stack",
     "hovermode": "compare",
+    "annotations": [
+      {
+        "x": 2016,
+        "y": 248,
+        "text": 248,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2017,
+        "y": 382,
+        "text": 382,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2018,
+        "y": 185,
+        "text": 185,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2019,
+        "y": 163,
+        "text": 163,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2020,
+        "y": 120,
+        "text": 120,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      },
+      {
+        "x": 2021,
+        "y": 163,
+        "text": 163,
+        "xanchor": "center",
+        "yanchor": "bottom",
+        "showarrow": false
+      }
+    ],
     "showlegend": true
   },
   "source": "A",

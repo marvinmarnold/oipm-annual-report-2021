@@ -45,13 +45,6 @@ class ComplaintsHighlightsPage extends React.Component {
 					<Col>
 						<h5 className="text-center">FIGURE 15: ANONYMOUS COMPLAINTS</h5>
 						<ComplaintsByAnonymousPlot />
-						<p>This chart of anonymous complaints captures when the complainant chooses not to give his or her name. Of
-the three anonymous complaints in 2018, two remain pending; the third was found to have No Formal
-Investigation Merited (NFIM). These findings are similar to those from 2017, where only 1 of 10
-anonymous complaints was sustained.</p>
-						<p>Similar to 4 th Amendment complaints, there is no clear way to use NOPD’s data to identify anonymous
-complaints from nameless complainants in the data. The results may not reflect the actual number of
-anonymous complaints.</p>
 					</Col>
 				</Row>
 			</div>
@@ -67,7 +60,7 @@ anonymous complaints.</p>
 					<div>
 						<Row>
 							<Col>
-								<h1 className="mt-5 text-center">2018 Annual Report</h1>
+								<h1 className="mt-5 text-center">2021 Annual Report</h1>
 								<h2 className="mb-5 text-center">Complaints, Commendations &amp; Disciplinary Proceedings</h2>
 							</Col>
 						</Row>
