@@ -6,8 +6,8 @@ import UofByPublicFemaleRacePlot from './uof-by-public-female-race-plot'
 import UofByPublicMaleRacePlot from './uof-by-public-male-race-plot'
 import UofByPublicFemaleTypeRacePlot from './uof-by-public-female-type-race-plot'
 import UofByPublicMaleTypeRacePlot from './uof-by-public-male-type-race-plot'
-// import BlackDisparitiesByMonthPlot from './black-disparities-by-month-plot'
-// import BlackDisparitiesByDistrictPlot from './black-disparities-by-district-plot'
+import BlackDisparitiesByMonthPlot from './black-disparities-by-month-plot'
+import BlackDisparitiesByDistrictPlot from './black-disparities-by-district-plot'
 
 class PublicDemographicsSection extends React.Component {
 	constructor() {
@@ -85,18 +85,16 @@ from 100%.</p>
 				</Row>
 				<Row>
 					<Col>
-                        <h1>MARVIN TODO</h1>
 						<h6>RACE OF INDIVIDUAL BY MONTH</h6>
-						{/* <BlackDisparitiesByMonthPlot /> */}
+						<BlackDisparitiesByMonthPlot />
 						<h5 className="text-center">FIGURE 26: UOF AGAINST BLACK PEOPLE</h5>
 
 					</Col>
 				</Row>
 				<Row>
 					<Col>
-                    <h1>MARVIN TODO</h1>
 						<h6>Race disparities by district</h6>
-						{/* <BlackDisparitiesByDistrictPlot /> */}
+						<BlackDisparitiesByDistrictPlot />
 						
 					</Col>
 				</Row>

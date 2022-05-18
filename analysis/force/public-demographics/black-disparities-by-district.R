@@ -10,13 +10,14 @@ title <- paste("Force, Bookings, & Stops of Black people by month in", CURRENT.Y
 # Group by month and race
 uof.by.district <- uof.for.year %>% filter(District.or.division %in% districts) %>% group_by(District.or.division, Individual.race)
 
+
 #bookings.by.district <- charges.for.year %>% 
 #  select(Folder.number, Race, Arrest.district) %>% 
 #  filter(Arrest.district %in% 1:8) %>%
 #  distinct %>% 
 #  group_by(Arrest.district, Race)
 
-stops.by.district <- stops.for.year %>% group_by(District, SubjectRace)
+stops.by.district <- stops.for.year %>% group_by(District, race)
 
 # Count items in each group
 count.uof.by.district <- uof.by.district %>% summarise(count = n())
@@ -49,7 +50,7 @@ black.uof.by.district <- count.uof.by.district %>% filter(Individual.race == bla
   district = substring(District.or.division, 1, 3)
 )
 #black.bookings.by.district <- count.bookings.by.district %>% filter(Race == black)
-black.stops.by.district <- count.stops.by.district %>% filter(SubjectRace == black)
+black.stops.by.district <- count.stops.by.district %>% filter(race == black)
 pct.black.by.district <- districts.by.race %>% filter(race == black)
 
 # Put it all together
@@ -63,15 +64,15 @@ black.by.district <- data.frame(
 
 p.black.by.district <- plot_ly(black.by.district, 
                                x = ~district, 
-                               y = ~population, 
+                               y = ~uof, 
                                type = 'bar', 
-                               name = "% black pop. by district") %>%
+                               name = "% force against black ppl by district") %>%
   
   add_trace(y = ~stops, name = "% stops are of black ppl by district") %>%
   
   #add_trace(y = ~bookings, name = "% bookings are of black ppl by district") %>%
   
-  add_trace(y = ~uof, name = "% force against black ppl by district") %>%
+#   add_trace(y = ~uof, name = "% force against black ppl by district") %>%
   
   layout(
     margin = list(b = 150),

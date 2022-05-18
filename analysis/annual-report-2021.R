@@ -3,7 +3,7 @@
 
 # Reset environment
 rm(list = ls())
-# setwd("/path/to/oipm/oipm-annual-report-2021/analysis")
+setwd("/Users/user/code/oipm/oipm-annual-report-2021/analysis")
 readRenviron(".Renviron")
 print(paste("Working directory set to:", getwd()))
 
@@ -26,7 +26,7 @@ CSV_SEP <- ","
 # Load libraries
 library(dplyr)
 library(plotly)
-# library(tidyr)
+library(tidyr)
 #library(geojsonio)
 #library(maptools)
 #library(leaflet)
@@ -51,6 +51,7 @@ ACTIONSTAKEN.CSV.DIRTY <- paste0(IAPRO_DIR, "/actionstaken_20220424.csv")
 # OPSO
 # AS400 - Bookings
 BOOKINGS.CSV.DIRTY <- paste0(DATA_DIR, "/01_Raw/OPSO/20220208Simmons/bookings_2015_2021.CSV")
+CHARGES.CSV.DIRTY <- paste0(DATA_DIR, "/01_Raw/OPSO/20220208Simmons/charges_2015_2021.CSV")
 
 ## Public data
 PUBLIC_DIR <- "public_data"
@@ -66,14 +67,20 @@ actions.taken.all <- read.csv(ACTIONSTAKEN.CSV.DIRTY, stringsAsFactors = FALSE, 
 
 stops.all <- read.csv(STOPS.CSV.PUBLIC, stringsAsFactors = FALSE, sep = CSV_SEP)
 bookings.all <- read.csv(BOOKINGS.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
+charges.all <- read.csv(CHARGES.CSV.DIRTY, stringsAsFactors = FALSE, sep = CSV_SEP)
 ###############################################################################
 ###################### PREPARE DATA ###########################################
-
 uof.all <- uof.all %>% mutate(
   year.of.record = substr(FIT.Number, 4, 7),
-  year = year.of.record
+  year = year.of.record,
+  month.long = paste0(year, str_pad(Month.occurred, 2, pad='0'))
 )
+
 uof.for.year <- uof.all %>% filter(year.of.record == CURRENT.YEAR)
+uof.for.analysis <- uof.all %>% 
+    filter(year.of.record <= CURRENT.YEAR) %>% 
+    filter(year.of.record >= IAPRO.FIRST.YEAR) %>%
+    filter(Month.occurred != "NULL")
 
 allegations.all <- allegations.all %>% 
   mutate(
@@ -195,20 +202,47 @@ stops.all <- stops.all %>%
     mutate(
         date = as.Date(EventDate, "%m/%d/20%y"),
         year = format(date, "%Y"),
-        month = format(date, "%m")
+        month = format(date, "%m"),
+        race = case_when(
+            SubjectRace == 'BLACK' ~ black,
+            SubjectRace == 'ASIAN' ~ asian,
+            SubjectRace == 'WHITE' ~ white,
+            SubjectRace == 'HISPANIC' ~ hispanic,
+            SubjectRace == 'AMER. IND.' ~ native,
+            TRUE ~ unknown.race
+        ),
+        month.long = paste0(year, str_pad(month, 2, pad='0'))
     )
 
 stops.for.year <- stops.all %>% filter(year == CURRENT.YEAR)
+stops.for.analysis <- stops.all %>% 
+    filter(year <= CURRENT.YEAR) %>% 
+    filter(year >= IAPRO.FIRST.YEAR)
 
 ## Bookings
 bookings.all <- bookings.all %>%
     mutate(
-        date = as.Date(Check.In.Date, "20%y/%m/%d"),
+        date = as.Date(Check.In.Date, "%y/%m/%d"),
         year = format(date, "%Y"),
-        month.in = format(date, "%m")
+        month.in = format(date, "%m"),
+        month = month.in,
+        race = case_when(
+            Race == 'B' ~ black,
+            Race == 'A' ~ asian,
+            Race == 'W' ~ white,
+            Race == 'H' ~ hispanic,
+            Race == 'I' ~ native,
+            TRUE ~ unknown.race
+        ),
+        month.long = paste0(year, str_pad(month, 2, pad='0'))
     )
 
-bookings.for.year <- bookings.all %>% filter(year == CURRENT.YEAR)
+bookings.for.year <- bookings.all %>%
+    filter(year == CURRENT.YEAR)
+
+bookings.for.analysis <- bookings.all %>% 
+    filter(year <= CURRENT.YEAR) %>% 
+    filter(year >= IAPRO.FIRST.YEAR)
 ###############################################################################
 ###################### PERFORM ANALYSIS #######################################
 

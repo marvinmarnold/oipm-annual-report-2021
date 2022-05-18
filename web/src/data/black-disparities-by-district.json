@@ -1,0 +1,118 @@
+{
+  "visdat": {
+    "e24854a069": ["function () ", "plotlyVisDat"]
+  },
+  "cur_data": "e24854a069",
+  "attrs": {
+    "e24854a069": {
+      "x": {},
+      "y": {},
+      "name": "% force against black ppl by district",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar"
+    },
+    "e24854a069.1": {
+      "x": {},
+      "y": {},
+      "name": "% stops are of black ppl by district",
+      "alpha_stroke": 1,
+      "sizes": [10, 100],
+      "spans": [1, 20],
+      "type": "bar",
+      "inherit": true
+    }
+  },
+  "layout": {
+    "margin": {
+      "b": 150,
+      "l": 60,
+      "t": 25,
+      "r": 10
+    },
+    "xaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "categoryorder": "array",
+      "categoryarray": ["1st District", "2nd District", "3rd District", "4th District", "5th District", "6th District", "7th District", "8th District"],
+      "title": "District",
+      "type": "category"
+    },
+    "legend": {
+      "x": 0,
+      "y": -0.3
+    },
+    "hovermode": "compare",
+    "yaxis": {
+      "domain": [0, 1],
+      "automargin": true,
+      "title": "Percent black",
+      "dtick": 10
+    },
+    "barmode": "group",
+    "showlegend": true
+  },
+  "source": "A",
+  "config": {
+    "modeBarButtonsToAdd": ["hoverclosest", "hovercompare"],
+    "showSendToCloud": false
+  },
+  "data": [
+    {
+      "x": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"],
+      "y": [76.4705882352941, 90.8396946564885, 87.7551020408163, 83.6065573770492, 80.9859154929577, 88.3211678832117, 90.2985074626866, 63.3333333333333],
+      "name": "% force against black ppl by district",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(31,119,180,1)",
+        "line": {
+          "color": "rgba(31,119,180,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "error_x": {
+        "color": "rgba(31,119,180,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    },
+    {
+      "x": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"],
+      "y": [66.1002178649237, 66.2031184155078, 57.8165374677003, 81.7542787286064, 74.2798353909465, 71.8943680948531, 86.1858811579482, 56.577243293247],
+      "name": "% stops are of black ppl by district",
+      "type": "bar",
+      "marker": {
+        "color": "rgba(255,127,14,1)",
+        "line": {
+          "color": "rgba(255,127,14,1)"
+        }
+      },
+      "error_y": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "error_x": {
+        "color": "rgba(255,127,14,1)"
+      },
+      "xaxis": "x",
+      "yaxis": "y",
+      "frame": null
+    }
+  ],
+  "highlight": {
+    "on": "plotly_click",
+    "persistent": false,
+    "dynamic": false,
+    "selectize": false,
+    "opacityDim": 0.2,
+    "selected": {
+      "opacity": 1
+    },
+    "debounce": 0
+  },
+  "shinyEvents": ["plotly_hover", "plotly_click", "plotly_selected", "plotly_relayout", "plotly_brushed", "plotly_brushing", "plotly_clickannotation", "plotly_doubleclick", "plotly_deselect", "plotly_afterplot", "plotly_sunburstclick"],
+  "base_url": "https://plot.ly"
+}

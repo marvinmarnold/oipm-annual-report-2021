@@ -63,3 +63,9 @@ https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/CreatingNewSubdomain.h
 Missing because of ADP:
 - https://annual-report-2018.nolaipm.gov/force-most/
 - https://annual-report-2018.nolaipm.gov/force-officer/
+
+- Race disparities by month: Can add % black population if desired
+    - ensure correctly ordered by month
+- By district: Missing arrests and population black
+
+17/72 -> 77% of months
